@@ -1,1 +1,15 @@
-d
+메인 
+
+제목(Your Dream is Our Passion) 폰트
+50px Montserrat
+Pretendard
+sans-serif
+
+부제목(우리가 힘껏 뛸수록 어쩌고) 폰트
+20px Montserrat
+Pretendard
+sans-serif
+
+
+참고영상
+https://www.youtube.com/watch?v=MjmUpXhaqRM
