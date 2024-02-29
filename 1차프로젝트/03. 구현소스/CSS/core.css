@@ -16,13 +16,3 @@
     4. 전체 공통체(메뉴 등)
     font-family: 'Nanum Gothic', sans-serif;
 */
-
-/*********** 공통 클래스 ***********/
-/* 중앙속박스 */
-.inbox{
-    /* 최대가로크기 */
-    max-width: 1360px;
-    /* 블록박스 중앙정렬 -> 마.영.미! */
-    margin: 0 middle;
-    
-}

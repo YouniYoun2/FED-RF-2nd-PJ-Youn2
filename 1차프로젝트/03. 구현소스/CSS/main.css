@@ -2,14 +2,22 @@
 /* 도깨비 PJ : 메인페이지 CSS - main.css */
 
 /* 리셋, 코아, 커먼 공통 외부CSS 합치기 */
-@import url(./reset.css);
-@import url(./core.css);
 @import url(./common.css);
+@import url(./core.css);
 @import url(./grid_12_float.css);   /* 그리드_12_플롯 불러오기 */
+@import url(./reset.css);
+
+
+html, body, h1, h2, h3, ul, ol {
+	margin: 0;
+	padding: 0;
+}
 
 /* 공사중 표시 */
 body * {
-    outline: 2px dashed #ccc;
+    margin: 0;
+    padding: 0;
+    outline: 2px dashed #f22828;
 }
 /* 1. 상단영역 */
 .top-area{
