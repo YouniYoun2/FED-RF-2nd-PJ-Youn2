@@ -44,6 +44,11 @@ ul::after,ol::after,.clb::after{
 
 
 /* 메뉴 */
+.gnb ul{
+    display: flex;    /* 메뉴 글자 줄바꿈 방지 */
+    white-space: nowrap;    /* 서브메뉴 줄 안나뉘게 */
+}
+
 .gnb ul > li {
     float: left;    /* 메뉴 가로나열 */
     line-height: 80px;
@@ -60,11 +65,31 @@ ul::after,ol::after,.clb::after{
     transform: translateX(-50%);
 }
 
-/* 상위 li 오버시 서브메뉴 보이기 */
-.gnb ol>li:hover .smenu{
-    max-height: 2510px;      /* ///// 아직 안먹음 ///// */
+/* 메뉴 마우스오버 */
+.gnb ul>li .smenu li a:hover{
+    transition: .3s;    /* 걸리는 시간 */
+    opacity: .6;        /* 투명도 */
+    font-weight: bold;
+    color: #f5b152;
 }
 
+/**************수정중***************/
+/* 오버시 밑줄 애니 */
+.uline li:hover>a::after{
+
+    content: '';
+    display: block;
+    margin-left: 100%;
+    width: 155555px;
+    height: 3px; /* 선 두께 */
+    background-color: #fff;
+    transition: .5s;
+
+    margin-left: 0;
+    width: 100%;
+    /* transition: width .3s; */
+}
+/****************************/
 
 
 
