@@ -12,7 +12,15 @@
 html, body, h1, h2, h3, ul, ol {
 	margin: 0;
 	padding: 0;
-}       /* 왜하는지는 모르겠음ㅎㅎ ////// */
+}
+
+/* 공통클래스 : 클리어설정 */
+/* 메뉴 단정하게~ */
+ul::after,ol::after,.clb::after{
+    content: '';   
+    display: block;
+    clear: both;
+}
 
 /* 공사중 표시 */
 body * {
@@ -23,80 +31,75 @@ body * {
 
 
 /*******************************************************/
+/* overflow: hidden으로 서브메뉴 숨기고싶음 */
+/* 마우스오버 하면 반투명 됐었는데 뭐 잘못건드림 */
+/* 뭐 자꾸 잘못 건드리는중 */
+/*******************************************************/
 
-/* a요소 공통 */
-/* 메뉴 하얗게~ */
+/* 메뉴 글자 하얗게 */
 a{
     color: #fff;
     text-decoration: none;
+    
 }
 
-
-/* 공통클래스 : 클리어설정 */
-/* 메뉴 단정하게~ */
-ul::after,ol::after,.clb::after{
-    content: '';   
-    display: block;
-    clear: both;
-}
-
-
-
-
-/* 메뉴 */
 .gnb ul{
-    display: flex;    /* 메뉴 글자 줄바꿈 방지 */
-    white-space: nowrap;    /* 서브메뉴 줄 안나뉘게 */
+    display: flex;     /* 메뉴 가로정렬 */
 }
 
 .gnb ul > li {
-    float: left;    /* 메뉴 가로나열 */
-    line-height: 80px;
+    line-height: 50px;
     padding: 0 30px;
+    float: left;    /* 메뉴 가로나열 */
+    white-space: nowrap;    /* 서브메뉴 줄바꿈 방지 */
     font-weight: bold;
     position: relative;
-    margin-left: 80px;      /* 메뉴랑 로고랑 안겹치려고~ 왼쪽 80px부터 메뉴 시작 */
     text-align: center;
 }
 
-.smenu{
-    position: absolute;     /* 하위메뉴 숨기기 위한 준비 */
-    left: 50%;              /* 상위메뉴의 중앙에 위치 */
-    transform: translateX(-50%);
-}
-
-/* 메뉴 마우스오버 */
-.gnb ul>li .smenu li a:hover{
+#top-area:hover .gnb{   /* 메뉴 마우스오버 */
     transition: .3s;    /* 걸리는 시간 */
     opacity: .6;        /* 투명도 */
     font-weight: bold;
     color: #f5b152;
+    height: 360px;
 }
 
-/**************수정중***************/
-/* 오버시 밑줄 애니 */
-.uline li:hover>a::after{
-
+/* 오버시 밑줄(nav01_flex.css 참고) */
+.uline li>a::after{
     content: '';
     display: block;
-    margin-left: 100%;
-    width: 155555px;
-    height: 3px; /* 선 두께 */
-    background-color: #fff;
-    transition: .5s;
-
+    margin-left: 100%;  /* 마우스 나갈 때 margin-left값 밀기 */
+    margin-top: 2px;    /* 글자와의 간격 조정은 마진탑으로 */
+    width: 0;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: .3s;
+}
+/* 오버시 밑줄 애니 */
+.uline li:hover>a::after{
     margin-left: 0;
     width: 100%;
-    /* transition: width .3s; */
+    transition: width .3s;
 }
-/****************************/
 
 
 
-/* 2. 배너(메인)영역 */
-.ban-area {
-    height: 937px;
+/*******************************************************/
+
+
+/* 2. 메인영역 */
+.main-area {
+    width: 100vw;
+    height: 100vh;
     background: url(../images/visual01.jpg) no-repeat;
+    background-size: cover; /* '공사중'에 꽉차게 */
+}
+.tit{
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #b0b0b0;
 }
 
 
