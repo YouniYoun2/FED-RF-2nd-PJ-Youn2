@@ -87,14 +87,14 @@ a{
 /*******************************************************/
 
 
-/* 2. 메인영역 */
-.main-area {
-    width: 100vw;
+/* 1. 메인영역 */
+
+.main-area {    /* 메인 사진 */
     height: 100vh;
     background: url(../images/visual01.jpg) no-repeat;
     background-size: cover; /* '공사중'에 꽉차게 */
 }
-.tit{
+.tit{   /* Your Dream is OurPassion */
     /* margin-top: 100px;
     font-size: 30px;
     font-weight: bold; */
@@ -115,7 +115,7 @@ a{
 
 
 
-/* 2.5. 라이브 앤 모어 */
+/* 2. 라이브 앤 모어 */
 .live-more{
     position: fixed;
     left: 10%;
@@ -125,7 +125,7 @@ a{
     /* pointer-events: none; */
 }
 
-.view-more{
+ .view-more{
     position: fixed;
     left: 10%;
     top: 56%;
@@ -137,36 +137,17 @@ a{
 
 
 /* 3. 스크롤 영역(Media) */
-.smooth-scroll{
-    height: 575px;
+.video {
 }
-
-
-/* .smooth-scroll{ */
-.gall-youtube video{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100%;
-    min-width: 100%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-/* 
-div id="smooth-scroll">
-            <section class="smooth-scroll inbox">
-                <div id="main">
-                    <div id="main-contents">
-                        <ul class="gall-list">
-                            <div> */
-
 
 
 /* 4. 미리보기영역 */
-.preview-area{
-    height: 803px;
+.creative{
+    /* font-size: 4rem; */
+    color: #111;    
 }
+
+
 /* 5. 현장포토영역 */
 .real-photo-area{
     height: 1043px;
