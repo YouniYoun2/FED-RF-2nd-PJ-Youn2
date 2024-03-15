@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* 도깨비 PJ : 메인페이지 CSS - main.css */
+/*  메인페이지 CSS - main.css */
 
 /* 리셋, 코아, 커먼 공통 외부CSS 합치기 */
 @import url(./common.css);
@@ -25,7 +25,7 @@ ul::after,ol::after,.clb::after{
 /* 공사중 표시 */
 body * {
     margin: 0 auto;
-    outline: 1px dashed #f27228;
+    /* outline: 1px dashed #f27228; */
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 
@@ -92,7 +92,7 @@ a{
 .main-area {    /* 메인 사진 */
     height: 100vh;
     background: url(../images/visual01.jpg) no-repeat;
-    background-size: cover; /* '공사중'에 꽉차게 */
+    background-size: cover; /* 꽉차게 */
 }
 .tit{   /* Your Dream is OurPassion */
     /* margin-top: 100px;
@@ -116,19 +116,20 @@ a{
 
 
 /* 2. 라이브 앤 모어 */
-.live-more{
+ .live-more{
     position: fixed;
     left: 10%;
-    top: 10%;
+    bottom: 20px;
+    top: 20%;
     font-size: 100px;
     color: #0042BF;
-    /* pointer-events: none; */
+    line-height: .9;
 }
 
  .view-more{
     position: fixed;
-    left: 10%;
-    top: 56%;
+    left: 11%;
+    top: 58%;
     font-size: 20px;
     color: #0042BF;
 }
