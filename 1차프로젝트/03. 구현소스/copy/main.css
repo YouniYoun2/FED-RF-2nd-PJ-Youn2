@@ -1,0 +1,91 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {    /* 11 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Montserrat', 'Pretendard', sans-serif;
+}
+
+html {      /* 22 */
+    font-size: 62.5%;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+ol, ul {/* 33 */
+    list-style: none;
+}
+
+::selection {/* 103 */
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+* { /* 118 */
+    box-sizing: border-box;
+    word-break: keep-all;
+}
+
+a {     /* 175 */
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.gall-youtube video {   /* 207 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-able {  /* 371 */
+    cursor: pointer;
+}
+
+#main-intro * { /* 394 */
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+}
+
+#main-intro .intro-gallery .gall-list {     /* 704 */
+    height: 100%;
+}
+
+.gall-youtube video {   /* 915 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.main-visual .visual-slider .swiper-slide .vs-bg {  /* 1047 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    transition-duration: 3s;
+}
+
+/* @media screen and (max-width: 820px)    // 2154
+body.main {
+    font-size: 100%;
+} */

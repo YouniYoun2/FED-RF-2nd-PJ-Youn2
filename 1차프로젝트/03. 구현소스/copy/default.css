@@ -1,0 +1,38 @@
+html { /* 4 */
+    overflow-y: scroll;
+}
+
+body {    /* 5 */
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Montserrat', 'Pretendard', 'Malgun Gothic', dotum, sans-serif;
+    background: #fff;
+    line-height: 1.6;
+    word-break: keep-all;
+    font-weight: 300;
+}
+
+html, h1, h2, h3, h4, h5, h6, form, fieldset, img { /* 6 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul, dl, dt, dd {    /* 10 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a { /* 22 */
+    color: #111;
+    text-decoration: none;
+}
+
+*, :after, :before {    /* 24 */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
