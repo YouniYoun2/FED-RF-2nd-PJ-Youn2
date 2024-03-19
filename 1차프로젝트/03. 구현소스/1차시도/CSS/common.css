@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/* 도깨비 PJ : 공통 모듈 CSS - common.css */
+/* 공유기능 요소 셋팅 */
+
+/* 폰트 */
+/* 
+Montserrat
+Pretendard
+sans-serif
+
+30px(메인-영어) / 16px(메인-한국어) / 10px(유진라이브&모어)
+ */
+/* @import url("https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100..900&family=Bagel+Fat+One&family=Black+And+White+Picture&family=Diphylleia&family=Orbit&display=swap"); */
+
+
+
+/************* 1. 상단영역 *************/
+/* #header .gnb-wrap {
+    display:flex;
+    justify-content:center;
+    height:100%;
+}
+#header .gnb-wrap .gnb {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:0;
+    text-align:center;
+}
+#header .gnb-wrap .gnb > li {
+    margin:0 47px;
+    vertical-align:middle;
+	height:100%;
+	display:flex;
+	align-items:center;
+}
+#header .gnb-wrap .gnb > li > ul{
+	position:absolute;  
+	border-bottom:1px solid #fff; 
+	background:#fff;
+	padding:30px; 
+	top:100px;
+	left:0;
+	width:100%; 
+	display:flex;
+	justify-content:center; 
+	font-size:18px; 
+}
+#header .gnb-wrap .gnb > li > ul > li { 
+	text-align:left;
+} 
+#header .gnb-wrap .gnb > li > ul > li > a{ 
+	font-weight:500;
+	padding:0 40px 0 0;
+	display:inline-block; 
+	transition:all ease .2s; 
+	position:relative;
+}
+#header .gnb-wrap .gnb > li > ul > li:hover > a{
+	color:#0042bf;  
+}
+#header .gnb-wrap .gnb > li > ul > li > a:before{content:'';   width:5px; height:5px; border-radius:50%; background:#0042bf; position:absolute; left:0; top:-14px; opacity:0; transition:all ease .3s;}
+#header .gnb-wrap .gnb > li > ul > li:hover > a:before{top:-7px; opacity:1;}
+
+#header .gnb-wrap .gnb > li > ul > li > ul{
+	margin:15px 0 10px;
+	text-align:left;
+}
+#header .gnb-wrap .gnb > li > ul > li > ul > li{
+	margin:5px 0;
+}
+#header .gnb-wrap .gnb > li > ul > li > ul > li > a{ 
+	font-size:16px;
+	position:relative; 
+}
+#header .gnb-wrap .gnb > li > ul > li > ul > li > a:after{content:''; width:0; height:1px; background:#111; position:absolute; right:0; bottom:-5px; transition:all ease .3s;} 
+#header .gnb-wrap .gnb > li > ul > li > ul > li > a:hover:after{  right:auto; left:0; width:100%;} 
+.all-menu .gnb-sns {display: flex;  align-items: end;}
+
+
+#header .gnb-wrap .gnb > li > a {
+    display:block;
+    font-size:18px;
+    color:#fff;
+    font-weight:600;
+    letter-spacing:-0.25px;
+} */
+
+
+
+
+
+
+/* .gnb-wrap{
+	color: #fff;
+	text-decoration: none;
+} */
+
+.gnb{
+	display: flex;
+	/* 메뉴 가로정렬 */
+}
+
+.gnb li {
+    line-height: 50px;
+    padding: 0 30px;
+    float: left;
+	/* 메뉴 가로나열 */
+    white-space: nowrap;
+	/* 서브메뉴 줄바꿈 방지 */
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+/* 메뉴 마우스오버 */
+.gnb-wrap:hover .gnb{
+    transition: .3s;
+	/* 걸리는 시간 */
+    opacity: .6;
+	/* 투명도 */
+}
+
+/* 오버시 밑줄(nav01_flex.css 참고) */
+.gnb ul>li::after{
+    content: '';
+    display: block;
+    margin-left: 100%;
+	/* 마우스 나갈 때 margin-left값 밀기 */
+    margin-top: 2px;
+	/* 글자와의 간격 조정은 마진탑으로 */
+    width: 0;
+    height: 1px;
+    background-color: rgb(255, 158, 158);
+    transition: .3s;
+}
+
+/* 오버시 밑줄 애니 */
+.uline li:hover>a::after{
+    margin-left: 0;
+    width: 100%;
+    transition: width .3s;
+}
+
+
+
+
+
+
+/************* 2. 메인영역 *************/
+/************* 3. 하단영역 *************/
+

@@ -1,6 +1,0 @@
-.swiper-container-fade .swiper-slide {  /* 525 */
-    pointer-events: none;
-    -webkit-transition-property: opacity;
-    -o-transition-property: opacity;
-    transition-property: opacity;
-}

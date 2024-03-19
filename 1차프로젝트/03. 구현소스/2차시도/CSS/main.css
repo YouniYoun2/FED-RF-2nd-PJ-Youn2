@@ -1,0 +1,52 @@
+@charset "utf-8";
+/*  메인페이지 CSS - main.css */
+
+/* 리셋, 코아, 커먼 공통 외부CSS 합치기 */
+@import url(./common.css);
+@import url(./core.css);
+@import url(./grid_12_float.css);   /* 그리드_12_플롯 불러오기 */
+@import url(./reset.css);
+
+
+/* 초기화 */
+html, body, h1, h2, h3, ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+/* 공통클래스 : 클리어설정 */
+/* 메뉴 단정하게~ */
+ul::after,ol::after,.clb::after{
+    content: '';   
+    display: block;
+    clear: both;
+}
+
+/* 공사중 표시 */
+body * {
+    margin: 0 auto;
+    outline: 1px dashed #f27228;
+}
+
+
+
+
+
+
+
+/* 5. 현장포토영역 */
+.real-photo-area{
+    height: 1043px;
+}
+/* 6. 대표이미지 영역 */
+.main-photo-area{
+    height: 731px;
+}
+/* 7. 최신동영상영역 */
+.clip-video-area{
+    height: 548px;
+}
+/* 8. 하단영역 */
+.footer-area{
+    height: 371px;
+}

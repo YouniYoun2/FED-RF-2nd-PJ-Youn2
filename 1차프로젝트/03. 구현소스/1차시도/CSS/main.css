@@ -26,65 +26,17 @@ ul::after,ol::after,.clb::after{
 body * {
     margin: 0 auto;
     outline: 1px dashed #f27228;
-    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 
 /*******************************************************/
 /* overflow: hidden으로 서브메뉴 숨기고싶은데 왜인지 잘안됨 */
 /* 마우스오버 하면 반투명 됐었는데 뭐 잘못건드림 */
-/* 뭐 자꾸 잘못 건드리는중ㅋㅋㅠㅠ */
+/* 뭐 자꾸 잘못 건드리는중ㅠㅠ 건드릴수록 이상해지는중ㅋㅋㅋㅠ */
 /*******************************************************/
 
-/* 메뉴 글자 하얗게 */
-a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.gnb ul{
-    display: flex;     /* 메뉴 가로정렬 */
-}
-
-.gnb ul > li {
-    line-height: 50px;
-    padding: 0 30px;
-    float: left;    /* 메뉴 가로나열 */
-    white-space: nowrap;    /* 서브메뉴 줄바꿈 방지 */
-    font-weight: bold;
-    position: relative;
-    text-align: center;
-}
-
-#top-area:hover .gnb{   /* 메뉴 마우스오버 */
-    transition: .3s;    /* 걸리는 시간 */
-    opacity: .6;        /* 투명도 */
-    font-weight: bold;
-    color: #f5b152;
-    height: 360px;
-}
-
-/* 오버시 밑줄(nav01_flex.css 참고) */
-.uline li>a::after{
-    content: '';
-    display: block;
-    margin-left: 100%;  /* 마우스 나갈 때 margin-left값 밀기 */
-    margin-top: 2px;    /* 글자와의 간격 조정은 마진탑으로 */
-    width: 0;
-    height: 1px;
-    background-color: rgb(255, 255, 255);
-    transition: .3s;
-}
-/* 오버시 밑줄 애니 */
-.uline li:hover>a::after{
-    margin-left: 0;
-    width: 100%;
-    transition: width .3s;
-}
 
 
-
-/*******************************************************/
 
 
 /* 1. 메인영역 */
@@ -133,6 +85,8 @@ a{
     font-size: 20px;
     color: #0042BF;
 }
+
+
 
 
 
