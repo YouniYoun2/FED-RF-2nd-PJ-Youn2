@@ -22,13 +22,20 @@ ul::after,ol::after,.clb::after{
     clear: both;
 }
 
-/* 공사중 표시 */
-body * {
-    margin: 0 auto;
-    outline: 1px dashed #f27228;
+/* 1. 메인영역 */
+.vs-bg {    /* 메인 사진 */
+    height: 100vh;
+    background-size: cover;
 }
 
-
+/* 대상 잡아야함 */
+#contents .main-visual .vs-txt {
+    position: absolute;
+    left: 255px;
+    top: 390px;
+    font-size: 50px;
+    color: #fff;
+}
 
 
 

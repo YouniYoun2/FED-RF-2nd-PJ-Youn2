@@ -10,24 +10,22 @@
         <link rel="stylesheet" href="./CSS/main.css" />
         <link rel="stylesheet" href="./CSS/reset.css" />
 
-        <!-- (((마우스 커서))) -->
+        <!-- (((마우스 커서.. 수업 보고 하면 될듯))) -->
 
         <!-- (((스크롤))) -->
 
         <div class="wrap ko-wrap">
             <div class="smooth-scroll">
                 <div id="main">
-                    <!-- MAIN CONTENTS START -->
+                    <!-- 상단바 -->
                     <div id="main-contents" style="">
                         <div>
-
-                            
-                            <!-- 네비게이션박스 -->
+                            <!-- 네비게이션 (화면 줄이면 사라져야함) -->
                             <nav class="gnb-wrap">
                                 <ul class="gnb">
                                     <li>
                                         <a href="#">Friendly</a>
-                                        <ul style="display: none">
+                                        <ul style="display: block">
                                             <li><a href="">Talk</a></li>
                                             <li><a href="">Earth</a></li>
                                             <li><a href="">Neighbor</a></li>
@@ -36,10 +34,11 @@
 
                                     <li>
                                         <a href="#">Professional</a>
-                                        <ul style="display: none">
+                                        <ul style="display: flex">
                                             <li>
-                                                <a href="">Business</a>
-                                                <ul>
+                                                <a href="#">Business</a>
+                                                <li style="display: flex">
+                                                <ul class="uline">
                                                     <li><a href="">건자재.유통</a></li>
                                                     <li><a href="">금융</a></li>
                                                     <li><a href="">물류.IT</a></li>
@@ -53,7 +52,7 @@
 
                                     <li>
                                         <a href="#">Eugene</a>
-                                        <ul style="display: none">
+                                        <ul style="display: block">
                                             <li><a href="">History</a></li>
                                             <li><a href="">Vision</a></li>
                                             <li><a href="">PR</a></li>
@@ -81,10 +80,12 @@
                                                 나의 힘껏, 너의 맘껏
                                             </p>
                                         </div>
-                                        <div
-                                            class="vs-bg"
-                                            style="background-image: url(images/main_visual03.jpg)"
-                                        ></div>
+                                        <div class="vs-bg" style="background-image: url(images/main_visual03.jpg)">
+                                            <span class="hide">배경이미지</span>
+                                        </div>
+                                        
+                                        <!-- (((swiper slide))) -->
+
                                         <div class="vs-txt">
                                             <h2>
                                                 Sustainable Growth <br class="pc-br" />
@@ -95,7 +96,9 @@
                                                 변화와 혁신에 끊임 없이 도전 하겠습니다.
                                             </p>
                                         </div>
-                                        <div class="vs-bg" style="background-image: url(images/visual01.jpg)"></div>
+                                        <div class="vs-bg" style="background-image: url(images/visual01.jpg)">
+                                            <span class="hide">배경이미지</span>
+                                        </div>
                                         <div class="vs-txt">
                                             <h2>
                                                 ESG management <br class="pc-br" />
@@ -110,6 +113,9 @@
                                             <span class="hide">배경이미지</span>
                                         </div>
                                     </div>
+
+                                    <!-- (((swiper slide))) -->
+
                                     <div class="vs-txt">
                                         <h2>
                                             Your Dream is <br class="pc-br" />
@@ -120,7 +126,11 @@
                                             나의 힘껏, 너의 맘껏
                                         </p>
                                     </div>
-                                    <div class="vs-bg" style="background-image: url(img/main/main_visual03.jpg)"></div>
+                                    <div class="vs-bg" style="background-image: url(images/main_visual03.jpg)">
+                                        <span class="hide">배경이미지</span>
+                                    </div>
+
+                                    <!-- (((swiper slide))) -->
                                     <div class="vs-txt">
                                         <h2>
                                             Sustainable Growth <br class="pc-br" />
@@ -131,7 +141,9 @@
                                             변화와 혁신에 끊임 없이 도전 하겠습니다.
                                         </p>
                                     </div>
-                                    <div class="vs-bg" style="background-image: url(images/visual01.jpg)"></div>
+                                    <div class="vs-bg" style="background-image: url(images/visual01.jpg)">
+                                        <span class="hide">배경이미지</span>
+                                    </div>
                                 </div>
                             </section>
 
@@ -145,6 +157,40 @@
                                                 <span class="copy-word02">Live &amp;</span>
                                                 <span class="copy-word03">More</span>
                                             </h1>
+                                        </div>
+                                        <div class="intro-gallery">
+                                            <ul class="gall-list">
+                                                <li id="gall-item01">
+                                                    <!-- 유튜브01 -->
+                                                    <p>#유진그룹 #유진이 #나의힘껏너의맘껏</p>
+                                                    <h5>유진이가 뭐 하는지 58초 안에 알려드림</h5>
+                                                </li>
+                                                <li id="gall-item02">
+                                                    <!-- 유튜브02 -->
+                                                    <p>#유진투자증권 #증권맨 #투자꿀팁</p>
+                                                    <h5>궁금했던 증권사의 진짜 이야기, 지금 확인해보세요!</h5>
+                                                </li>
+                                                <li id="gall-item03">
+                                                    <!-- 유튜브03 -->
+                                                    <p>#유진어린이집 #보육교사 #귀염뽀짝</p>
+                                                    <h5>귀염뽀짝 어린이집 교사의 하루, 어린이집 자장가 이렇게 들려준다고?</h5>
+                                                </li>
+                                                <li id="gall-item04">
+                                                    <!-- 유튜브04 -->
+                                                    <p>(우리가 힘껏 뛸수록 당신은 맘껏 펼칠 수 있으니까)</p>
+                                                </li>
+                                                <li id="gall-item05">
+                                                    <!-- 유튜브05 -->
+                                                    <p>#디벨로퍼 #부동산개발 #유진기업</p>
+                                                    <h5>현직 디벨로퍼의 부동산 개발업 취업 꿀팁</h5>
+                                                </li>
+                                                <li id="gall-item06">
+                                                    <!-- 유튜브06 -->
+                                                    <p>#유진그룹 #사회공헌활동 #유진어린이집 #기부</p>
+                                                    <h5>더 나은 미래를 위해, 유진그룹 사회공헌 영상</h5>
+                                                </li>
+                                                
+                                            </ul>
                                         </div>
                                     </div>
                                     <!-- (((동영상들))) -->
@@ -203,16 +249,10 @@
                             </section>
                         </main>
 
-
-
-
-
-
                         <!-- FOOT -->
                     </div>
                 </div>
             </div>
         </div>
     </head>
-
 </html>

@@ -15,7 +15,51 @@ sans-serif
 
 
 
+/************* 0. 기타영역 *************/
+
+/* 공사중 표시 */
+body * {
+    margin: 0 auto;
+    outline: 1px dashed #f27228;
+}
+
+
+
+
+
 /************* 1. 상단영역 *************/
+
+
+/**********************
+ 네비게이션
+ - 위치 (ㅇ)
+ - 오버플로우 히든
+ - 마우스오버 반투명 (ㅇ)
+ - 마우스오버 서서브 밑줄
+**********************/
+.gnb-wrap .gnb {
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+    /* font-size: 0; */
+
+    /* line-height: 50px; */
+}
+
+/* 세부메뉴 파란글자 */
+.gnb-wrap .gnb li ul a:hover {
+    opacity: .6;
+    color: #0042BF;
+}
+
+/* 오버플로우 히든 하는중 */
+#main-contents .gnb-wrap .gnb{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
 
 
 /************* 2. 메인영역 *************/
