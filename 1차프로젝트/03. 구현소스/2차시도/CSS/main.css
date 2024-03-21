@@ -8,6 +8,11 @@
 @import url(./reset.css);
 
 
+* {
+    box-sizing: border-box;
+    word-break: keep-all;
+}
+
 /* 초기화 */
 html, body, h1, h2, h3, ul, ol {
 	margin: 0;
@@ -23,18 +28,65 @@ ul::after,ol::after,.clb::after{
 }
 
 /* 1. 메인영역 */
-.vs-bg {    /* 메인 사진 */
+.main-visual .vs-bg {    /* 메인 사진 */
+    background-size: cover; /* 공사중에 꽉차게 */
+    position: absolute; /* 서로 겹쳐짐 */
+    left: 0;
+    top: 0;
+    width: 100vw;
     height: 100vh;
-    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    /* background-size: cover; */
+    /* transform: scale(1.1); */
+    transition-duration: 3s;
+    /* display: flex; */
+    /* overflow: hidden; */
+    opacity: 30%;
+    transition: 0.5s ease-in-out;
 }
 
-/* 대상 잡아야함 */
-#contents .main-visual .vs-txt {
+
+/* 메인 글자 */
+.vs-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* position: relative; */
     position: absolute;
-    left: 255px;
-    top: 390px;
+    margin: 0 auto;
+    max-width: 150em;
+    /* width: 100%; */
+    height: 50%;
+    z-index: 1;
     font-size: 50px;
     color: #fff;
+    left: 5%;
+}
+
+/* 라이브 앤 모어 */
+.intro-copy-con {
+transform: translate3d(0px, 0px, 0px);
+overflow: hidden;
+
+/* left: 0px; */
+left: 10%;
+/* top: 0px; */
+top: 20%;
+bottom: 20px;
+
+/* margin: 0px; */
+/* width: 1384px; */
+/* height: 3812px; */
+/* padding: 0px; */
+/* box-sizing: border-box; */
+/* max-width: 1384px; */
+/* max-height: 3812px; */
+font-size: 100px;
+
+position: fixed;    /* 고정 */
+color: #0042BF;
+/* line-height: .9; */
 }
 
 
