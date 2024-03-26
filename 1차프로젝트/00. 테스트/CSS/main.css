@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* 도깨비 PJ : 메인페이지 CSS - main.css */
+
+/* 리셋, 코아, 커먼 공통 외부CSS 합치기 */
+@import url(./common.css);
+@import url(./core.css);
+@import url(./grid_12_float.css);   /* 그리드_12_플롯 불러오기 */
+@import url(./reset.css);
+
+
+/* 초기화 */
+html, body, h1, h2, h3, ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+/* 공통클래스 : 클리어설정 */
+/* 메뉴 단정하게~ */
+ul::after,ol::after,.clb::after{
+    content: '';   
+    display: block;
+    clear: both;
+}
+
+/* 공사중 표시 */
+body * {
+    margin: 0 auto;
+    outline: 1px dashed #f27228;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+
+/*******************************************************/
+/* overflow: hidden으로 서브메뉴 숨기고싶음 */
+/* 마우스오버 하면 반투명 됐었는데 뭐 잘못건드림 */
+/* 뭐 자꾸 잘못 건드리는중 */
+/*******************************************************/
+
+/* 메뉴 글자 하얗게 */
+a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.gnb ul{
+    display: flex;     /* 메뉴 가로정렬 */
+}
+
+.gnb ul > li {
+    line-height: 50px;
+    padding: 0 30px;
+    float: left;    /* 메뉴 가로나열 */
+    white-space: nowrap;    /* 서브메뉴 줄바꿈 방지 */
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+#gnb:hover{   /* 메뉴 마우스오버 */
+    transition: .3s;    /* 걸리는 시간 */
+    opacity: .6;        /* 투명도 */
+    font-weight: bold;
+    color: #f5b152;
+    height: 360px;
+}
+
+/* 오버시 밑줄(nav01_flex.css 참고) */
+.uline li>a::after{
+    content: '';
+    display: block;
+    margin-left: 100%;  /* 마우스 나갈 때 margin-left값 밀기 */
+    margin-top: 2px;    /* 글자와의 간격 조정은 마진탑으로 */
+    width: 0;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: .3s;
+}
+/* 오버시 밑줄 애니 */
+.uline li:hover>a::after{
+    margin-left: 0;
+    width: 100%;
+    transition: width .3s;
+}
+
+
+
+/*******************************************************/
+
+
+/* 2. 메인영역 */
+.main-area {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/visual01.jpg) no-repeat;
+    background-size: cover; /* '공사중'에 꽉차게 */
+}
+.tit{
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #b0b0b0;
+}
+
+
+
+
+
+
+
+
+
+
+/* 2.5. 서브파트메뉴 */
+.spart-menu{
+    height: 68px;
+}
+/* 3. 인트로영역 */
+.intro-area{
+    height: 575px;
+}
+/* 4. 미리보기영역 */
+.preview-area{
+    height: 803px;
+}
+/* 5. 현장포토영역 */
+.real-photo-area{
+    height: 1043px;
+}
+/* 6. 대표이미지 영역 */
+.main-photo-area{
+    height: 731px;
+}
+/* 7. 최신동영상영역 */
+.clip-video-area{
+    height: 548px;
+}
+/* 8. 하단영역 */
+.footer-area{
+    height: 371px;
+}

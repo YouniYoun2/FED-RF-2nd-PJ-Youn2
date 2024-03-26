@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* 도깨비 PJ : 공통 모듈 CSS - common.css */
+/* 공유기능 요소 셋팅 */
+
+/* 폰트 */
+/* 
+Montserrat
+Pretendard
+sans-serif
+
+30px(메인-영어) / 16px(메인-한국어) / 10px(유진라이브&모어)
+ */
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100..900&family=Bagel+Fat+One&family=Black+And+White+Picture&family=Diphylleia&family=Orbit&display=swap");
+
+/************* 1. 상단영역 *************/
+/************* 2. 메인영역 *************/
+/************* 3. 하단영역 *************/
+
+#top-area {
+    background-color: #c7ffd4;
+  }

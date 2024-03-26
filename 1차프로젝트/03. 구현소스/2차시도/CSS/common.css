@@ -1,16 +1,14 @@
 @charset "utf-8";
 
 /* 공통 모듈 CSS - common.css */
-/* 공유기능 요소 셋팅 */
+/* 공유기능 요소 셋팅 (상단 네비게이션, 하단 foot) */
 
 /* 폰트 */
 /* 
 Montserrat
 Pretendard
 sans-serif
-
-30px(메인-영어) / 16px(메인-한국어) / 10px(유진라이브&모어)
- */
+*/
 /* @import url("https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100..900&family=Bagel+Fat+One&family=Black+And+White+Picture&family=Diphylleia&family=Orbit&display=swap"); */
 
 
@@ -33,30 +31,27 @@ body * {
 /**********************
  네비게이션
  - 위치 (ㅇ)
- - 오버플로우 히든
- - 마우스오버 반투명 (ㅇ)
+ - 마우스오버 파랑
+ - 마우스오버 글자위 점
  - 마우스오버 서서브 밑줄
 **********************/
+
+/* 폰트 */
+.gnb a {
+    color: #fff;
+}
+
+/* 메뉴바 */
 .gnb-wrap .gnb {
-    display: flex;
-    /* justify-content: center; */
-    text-align: center;
-    /* font-size: 0; */
-
-    /* line-height: 50px; */
-}
-
-/* 세부메뉴 파란글자 */
-.gnb-wrap .gnb li ul a:hover {
-    opacity: .6;
-    color: #0042BF;
-}
-
-/* 오버플로우 히든 하는중 */
-#main-contents .gnb-wrap .gnb{
     position: relative;
-    overflow: hidden;
-    z-index: 1;
+    display: flex;
+    text-align: center;
+    z-index: 1; /* 이거 안하면 안보임 */
+}
+
+/* 세부메뉴 */
+.gnb > li > ul a:hover {
+    color: #2cff25;
 }
 
 
