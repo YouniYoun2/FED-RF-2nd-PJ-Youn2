@@ -10,7 +10,16 @@
         <link rel="stylesheet" href="./CSS/main.css" />
         <link rel="stylesheet" href="./CSS/reset.css" />
 
-        <!-- (((마우스 커서.. 수업 보고 하면 될듯))) -->
+        <!-- 마우스 커서 -->
+        <div class="cursor">
+            <div
+                class="cursor-ball"
+                style="transform: translate(-50%, -50%) translate(1387px, 268px); mix-blend-mode: difference">
+                <svg height="30" width="30" style="transform: translate(0px, 0px)">
+                    <circle cx="15" cy="15" r="12" stroke-width="0" style="fill: rgb(20, 255, 55)"></circle>
+                </svg>
+            </div>
+        </div>
 
         <!-- (((스크롤))) -->
 
@@ -150,7 +159,10 @@
                             </section>
 
                             <!-- 유진 Live & More -->
-                            <div class="pin-spacer" style="float: none; display: block; overflow: visible">
+                            <div
+                                class="pin-spacer"
+                                style="float: none; display: block; overflow: visible; position: relative"
+                            >
                                 <section
                                     id="main-intro"
                                     style="transform: translate3d(0px, 0px, 0px); overflow: hidden"
@@ -204,6 +216,7 @@
                                                     <iframe
                                                         width="300px"
                                                         src="https://www.youtube.com/embed/gkqWafWqXJs?si=bqKSwvgif50wKlFi"
+                                                        style="clip-path: circle()"
                                                     ></iframe>
                                                     <p>우리가 힘껏 뛸수록 당신은 맘껏 펼칠 수 있으니까</p>
                                                 </li>
@@ -213,6 +226,7 @@
                                                     <iframe
                                                         width="300px"
                                                         src="https://www.youtube.com/embed/y2dadNLU4B0?si=njut2WpHFDrsDwJq"
+                                                        style="clip-path: circle()"
                                                     ></iframe>
                                                     <p>#디벨로퍼 #부동산개발 #유진기업</p>
                                                     <h5>현직 디벨로퍼의 부동산 개발업 취업 꿀팁</h5>
@@ -232,6 +246,9 @@
                                     </div>
                                 </section>
                             </div>
+
+
+
 
                             <!-- (((Creative EUGENE SNS Channel))) -->
                             <section class="main-sns">
@@ -347,33 +364,25 @@
                                     <div class="img">
                                         <img src="../2차시도/images/business-img01.jpg" alt="" />
                                         <div class="txt">
-                                            <span>Construction Materials / Distribution
-                                                건자재/유통
-                                            </span>
+                                            <span>Construction Materials / Distribution 건자재/유통 </span>
                                         </div>
                                     </div>
                                     <div class="img">
                                         <img src="../2차시도/images/business-img02.jpg" alt="" />
                                         <div class="txt">
-                                            <span>finance
-                                                금융
-                                            </span>
+                                            <span>finance 금융 </span>
                                         </div>
                                     </div>
                                     <div class="img">
                                         <img src="../2차시도/images/business-img03.jpg" alt="" />
                                         <div class="txt">
-                                            <span>Logistics / IT
-                                                물류/IT
-                                            </span>
+                                            <span>Logistics / IT 물류/IT </span>
                                         </div>
                                     </div>
                                     <div class="img">
                                         <img src="../2차시도/images/business-img04.jpg" alt="" />
                                         <div class="txt">
-                                            <span>Leisure / Entertainment
-                                                레저/엔터테인먼트
-                                            </span>
+                                            <span>Leisure / Entertainment 레저/엔터테인먼트 </span>
                                         </div>
                                     </div>
                                 </div>
@@ -389,14 +398,38 @@
                                 </div>
                             </section>
                         </main>
-
-                        <!-- FOOT -->
-                        <div class="footer">
-                            <p>사이버감사실</p>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </head>
+
+
+
+
+    <!-- FOOT -->
+    <footer id="footer">
+        <div class="maxinner">
+            <div class="ft-top">
+                <div class="ft-menu">
+                    <ul>
+                        <li>사이버감사실</li>
+                        <li>법적고지</li>
+                    </ul>
+                    <p>Family Site</p>
+                </div>
+            </div>
+            <div class="ft-btm">
+                <div class="ft-addr">
+                    <address>
+                        <p>ADDRESS : (우)07327 서울시 영등포구 국제금융로 24 유진빌딩</p>
+                        <p>TEL : 82-2-3704-3300 (02-3704-3300)</p>
+                        <p>FAX : 82-2-3704-5858 (02-3704-5858)</p>
+                    </address>
+                    <p class="copyright">Copyright © 2022 EUGENE GROUP All rights reserved.</p>
+                </div>
+            </div>
+            <p>유튜브 / 페이스북 / 블로그 / 인스타그램</p>
+        </div>
+    </footer>
 </html>
