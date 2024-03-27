@@ -10,16 +10,13 @@
         <link rel="stylesheet" href="./CSS/main.css" />
         <link rel="stylesheet" href="./CSS/reset.css" />
 
-        <!-- 마우스 커서 -->
-        <div class="cursor">
-            <div
-                class="cursor-ball"
-                style="transform: translate(-50%, -50%) translate(1387px, 268px); mix-blend-mode: difference">
-                <svg height="30" width="30" style="transform: translate(0px, 0px)">
-                    <circle cx="15" cy="15" r="12" stroke-width="0" style="fill: rgb(20, 255, 55)"></circle>
-                </svg>
-            </div>
-        </div>
+        <!-- 마우스 -->
+        <script src="./js/following.js"defer></script>
+        <link rel="stylesheet" href="./CSS/following.css">
+        <!-- 슬라이드 -->
+        <link rel="stylesheet" href="CSS/slide.css" />
+        <script src="js/slide.js"></script>
+
 
         <!-- (((스크롤))) -->
 
@@ -79,22 +76,7 @@
                                 <!-- (((swiper))) -->
                                 <div style="height: 953px">
                                     <div>
-                                        <div class="vs-txt">
-                                            <h2>
-                                                Your Dream is <br class="pc-br" />
-                                                Our Passion
-                                            </h2>
-                                            <p>
-                                                우리가 힘껏 뛸수록 당신은 맘껏 펼칠 수 있으니까 <br class="pc-br" />
-                                                나의 힘껏, 너의 맘껏
-                                            </p>
-                                        </div>
-                                        <div class="vs-bg" style="background-image: url(images/main_visual03.jpg)">
-                                            <span class="hide">배경이미지</span>
-                                        </div>
-
-                                        <!-- (((swiper slide))) -->
-
+                                        <!-- 1 -->
                                         <div class="vs-txt">
                                             <h2>
                                                 Sustainable Growth <br class="pc-br" />
@@ -105,9 +87,8 @@
                                                 변화와 혁신에 끊임 없이 도전 하겠습니다.
                                             </p>
                                         </div>
-                                        <div class="vs-bg" style="background-image: url(images/visual01.jpg)">
-                                            <span class="hide">배경이미지</span>
-                                        </div>
+                                        <div class="vs-bg" style="background-image: url(images/visual01.jpg)"></div>
+                                        <!-- 2 -->
                                         <div class="vs-txt">
                                             <h2>
                                                 ESG management <br class="pc-br" />
@@ -118,40 +99,19 @@
                                                 ESG 경영을 실천하고 있습니다.
                                             </p>
                                         </div>
-                                        <div class="vs-bg" style="background-image: url(images/visual03.jpg)">
-                                            <span class="hide">배경이미지</span>
+                                        <div class="vs-bg" style="background-image: url(images/visual02.jpg)"></div>
+                                        <!-- 3 -->
+                                        <div class="vs-txt">
+                                            <h2>
+                                                Your Dream is <br class="pc-br" />
+                                                Our Passion
+                                            </h2>
+                                            <p>
+                                                우리가 힘껏 뛸수록 당신은 맘껏 펼칠 수 있으니까 <br class="pc-br" />
+                                                나의 힘껏, 너의 맘껏
+                                            </p>
                                         </div>
-                                    </div>
-
-                                    <!-- (((swiper slide))) -->
-
-                                    <div class="vs-txt">
-                                        <h2>
-                                            Your Dream is <br class="pc-br" />
-                                            Our Passion
-                                        </h2>
-                                        <p>
-                                            우리가 힘껏 뛸수록 당신은 맘껏 펼칠 수 있으니까 <br class="pc-br" />
-                                            나의 힘껏, 너의 맘껏
-                                        </p>
-                                    </div>
-                                    <div class="vs-bg" style="background-image: url(images/main_visual03.jpg)">
-                                        <span class="hide">배경이미지</span>
-                                    </div>
-
-                                    <!-- (((swiper slide))) -->
-                                    <div class="vs-txt">
-                                        <h2>
-                                            Sustainable Growth <br class="pc-br" />
-                                            Through Innovation
-                                        </h2>
-                                        <p>
-                                            유진은 새로운 경험을 바탕으로<br class="pc-br" />
-                                            변화와 혁신에 끊임 없이 도전 하겠습니다.
-                                        </p>
-                                    </div>
-                                    <div class="vs-bg" style="background-image: url(images/visual01.jpg)">
-                                        <span class="hide">배경이미지</span>
+                                        <div class="vs-bg" style="background-image: url(images/visual03.jpg)"></div>
                                     </div>
                                 </div>
                             </section>
@@ -402,7 +362,27 @@
         </div>
     </head>
 
+    <body>
+        <!--------------- 마우스 --------------->
+        <!-- 컨텐츠 박스 -->
+        <div class="cont-box"></div>
+        <!-- 따라다니는 원 -->
+        <div class="mover"></div>
+        <!-------------- 슬라이드 -------------->
+        <section>
+            <!--슬라이드-->
+            <ul id="slide"></ul>
 
+            <!--이동버튼-->
+            <a href="#" class="abtn ab1"><img src="images/bu-arrow-next.png" alt="왼쪽이동버튼" /></a>
+            <a href="#" class="abtn ab2"><img src="images/bu-arrow-prev.png" alt="오른쪽이동버튼" /></a>
+
+            <!--블릿버튼-->
+            <ol class="indic"></ol>
+        </section>
+        <!--------------  -------------->
+
+    </body>
 
 
     <!-- FOOT -->
