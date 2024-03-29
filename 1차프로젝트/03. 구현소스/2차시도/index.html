@@ -10,6 +10,13 @@
         <link rel="stylesheet" href="./CSS/main.css" />
         <link rel="stylesheet" href="./CSS/reset.css" />
 
+        <!-- 폰트 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;family=Poppins&amp;display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://eugenes.co.kr/theme/basic/css/fonts/font.css" />
+        <link rel="stylesheet" href="https://eugenes.co.kr/js/font-awesome/css/font-awesome.min.css" />
+
         <!-- 마우스 -->
         <script src="./js/following.js"defer></script>
         <link rel="stylesheet" href="./CSS/following.css">
@@ -18,38 +25,43 @@
         <script src="js/slide.js"></script>
 
 
-        <!-- (((스크롤))) -->
-
         <div class="wrap ko-wrap">
             <div class="smooth-scroll">
                 <div id="main">
                     <!-- 상단바 -->
                     <div id="main-contents" style="">
-                        <div>
-                            <!-- 네비게이션 (화면 줄이면 사라져야함) -->
+                        <div id="top-area" class="top-area">    <!-- 로고 -->
+                            <div class="col-2">
+                                <h1 class="hd-logo" style="z-index: 100; position: relative;">
+                                    <a href="#">
+                                        <img src="./images/logo-white.png" alt="로고" style="width: 162px" />
+                                    </a>
+                                </h1>
+                            </div>
+                        </div>
+                            <!-- 네비게이션 -->
                             <nav class="gnb-wrap">
                                 <ul class="gnb">
                                     <li>
                                         <a href="#">Friendly</a>
-                                        <ul style="display: flex">
+                                        <ul style="display: none">
                                             <li><a href="">Talk</a></li>
                                             <li><a href="">Earth</a></li>
                                             <li><a href="">Neighbor</a></li>
                                         </ul>
-                                    </li>
+                                    </li> 
 
                                     <li>
                                         <a href="#">Professional</a>
-                                        <ul style="display: flex">
+                                        <ul style="display: none">
                                             <li>
                                                 <a href="#">Business</a>
-                                                    <ul class="uline">
-                                                        <li><a href="">건자재.유통</a></li>
-                                                        <li><a href="">금융</a></li>
-                                                        <li><a href="">물류.IT</a></li>
-                                                        <li><a href="">레저.엔터테인먼트</a></li>
-                                                    </ul>
-                                                </li>
+                                                <ul class="uline">
+                                                    <li><a href="">건자재.유통</a></li>
+                                                    <li><a href="">금융</a></li>
+                                                    <li><a href="">물류.IT</a></li>
+                                                    <li><a href="">레저.엔터테인먼트</a></li>
+                                                </ul>
                                             </li>
                                             <li><a href="">People</a></li>
                                             <li><a href="">Newsroom</a></li>
@@ -58,7 +70,7 @@
 
                                     <li>
                                         <a href="#">Eugene</a>
-                                        <ul style="display: flex">
+                                        <ul style="display: none">
                                             <li><a href="">History</a></li>
                                             <li><a href="">Vision</a></li>
                                             <li><a href="">PR</a></li>
@@ -68,7 +80,6 @@
                                     </li>
                                 </ul>
                             </nav>
-                        </div>
 
                         <!-- 메인 -->
                         <main id="contents">

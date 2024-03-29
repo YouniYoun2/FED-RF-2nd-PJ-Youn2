@@ -1,14 +1,8 @@
 @charset "utf-8";
 
-/* 공통 모듈 CSS - common.css */
 /* 공유기능 요소 셋팅 (상단 네비게이션, 하단 foot) */
 
-/* 폰트 */
-/* 
-Montserrat
-Pretendard
-sans-serif
-*/
+/* 폰트 Montserrat, Pretendard, sans-serif */
 /* @import url("https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100..900&family=Bagel+Fat+One&family=Black+And+White+Picture&family=Diphylleia&family=Orbit&display=swap"); */
 
 
@@ -21,8 +15,12 @@ body * {
     outline: 1px dashed #f27228;
 }
 
-
-
+/* 폰트 */
+body, html, h1, h2, h3, h4, h5, h6, ul, dl, dt, dd, a {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    line-height: 1.6;
+}
 
 
 /************* 1. 상단영역 *************/
@@ -39,15 +37,157 @@ body * {
 /* 폰트 */
 .gnb a {
     color: #fff;
+    font-size: 1.7rem;
+}
+
+.gnb{
+	display: flex;
+	/* 메뉴 가로정렬 */
+    line-height: 50px;
+    padding: 0 30px;
+    font-weight: bold; 
 }
 
 /* 메뉴바 */
 .gnb-wrap .gnb {
+    top: 20px;
     position: relative;
-    display: flex;
     text-align: center;
     z-index: 1; /* 이거 안하면 안보임 */
 }
+
+/* friendly 마우스오버 */
+.gnb-wrap ul a:hover {
+    color: red;
+    transition: .3s;
+}
+
+/* friendly-talk */
+.gnb-wrap .gnb ul{  
+    background-color: #fff;
+    height: 200px;
+}
+
+.gnb li {
+    white-space: nowrap;    /* 서브메뉴 줄바꿈 방지 */
+}
+
+
+/* 상위메뉴 오버시 서브메뉴 보이기 */
+.gnb  ul  li:hover {
+    max-height: 50vh;
+}
+
+
+#header .gnb-wrap .gnb > li > ul > li > a {
+    transition: all ease .2s;
+    position: relative;
+}
+
+/* 오버시 밑줄(nav01_flex.css 참고) */
+.gnb ul>li::after{
+    content: '';
+    display: block;
+    margin-left: 100%;
+	/* 마우스 나갈 때 margin-left값 밀기 */
+    margin-top: 2px;
+	/* 글자와의 간격 조정은 마진탑으로 */
+    width: 0;
+    height: 1px;
+    background-color: rgb(255, 158, 158);
+    transition: .3s;
+}
+
+/* 오버시 밑줄 애니 */
+.uline li:hover>a::after{
+    margin-left: 0;
+    width: 100%;
+    transition: width .3s;
+}
+
+
+
+/* copy 시작 */
+/* 네비게이션 서브 흰박스 */
+/* .gnb-wrap .gnb > li > ul{   
+	position:absolute;  
+	border-bottom:1px solid #fff; 
+	background:#fff;
+	padding:30px; 
+	top:100px;
+	left:0;
+	width:100%; 
+	display:flex;
+	justify-content:center; 
+	font-size:18px; 
+} */
+
+
+.gnb-wrap .gnb > li > ul > li > a{ 
+	font-weight:500;
+	padding:0 40px 0 0;
+	display:inline-block; 
+	transition:all ease .2s; 
+	position:relative;
+}
+
+.gnb-wrap .gnb > li > ul > li:hover > a{
+	color:#0042bf;  
+}
+
+.gnb-wrap .gnb > li > ul > li > a:before{
+    content:'';
+    width:5px; 
+    height:5px; 
+    border-radius:50%;
+    background:#0042bf; 
+    position:absolute; 
+    left:0; 
+    top:-14px; 
+    opacity:0; 
+    transition:all ease .3s;
+}
+.gnb-wrap .gnb > li > ul > li:hover > a:before{
+    top:-7px; 
+    opacity:1;
+}
+
+.gnb-wrap .gnb > li > ul > li > ul{
+	margin:15px 0 10px;
+	text-align:left;
+}
+
+.gnb-wrap .gnb > li > ul > li > ul > li{
+	margin:5px 0;
+}
+
+.gnb-wrap .gnb > li > ul > li > ul > li > a{ 
+	font-size:16px;
+	position:relative;
+}
+
+.gnb-wrap .gnb > li > ul > li > ul > li > a:after{
+    content:'';
+    width:0; 
+    height:1px;
+    background:#111; 
+    position:absolute;
+    right:0;
+    bottom:-5px;
+    transition:all ease .3s;
+} 
+/* .gnb-wrap .gnb > li > ul > li > ul > li > a:hover:after{  
+    right:auto; 
+    left:0; 
+    width:100%;
+}  */
+/* .all-menu .gnb-sns {
+    display: flex;  
+    align-items: end;
+} */
+/* 
+/* copy 끝 */
+
 
 /* 세부메뉴 */
 .gnb > li > ul a:hover {
