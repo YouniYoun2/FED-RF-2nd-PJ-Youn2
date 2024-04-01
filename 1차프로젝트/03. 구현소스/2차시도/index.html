@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>유진그룹</title>
-        <link rel="stylesheet" href="./CSS/common.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>유진그룹</title>
+    <link rel="stylesheet" href="./CSS/common.css" />
         <link rel="stylesheet" href="./CSS/core.css" />
         <link rel="stylesheet" href="./CSS/grid_12_float.css" />
         <link rel="stylesheet" href="./CSS/main.css" />
         <link rel="stylesheet" href="./CSS/reset.css" />
         <link rel="stylesheet" href="./CSS/media.css">  <!-- 미디어쿼리 -->
-
+        
         <!-- 폰트 -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
@@ -22,16 +21,18 @@
         <script src="./js/following.js"defer></script>
         <link rel="stylesheet" href="./CSS/following.css">
         <!-- 슬라이드 -->
-        <link rel="stylesheet" href="CSS/slide.css" />
+        <link rel="stylesheet" href="CSS/slide.css"/>
         <script src="js/slide.js"></script>
-
-
+        
+        
+    <head>
         <div class="wrap ko-wrap">
             <div class="smooth-scroll">
                 <div id="main">
                     <!-- 상단바 -->
-                    <div id="main-contents" style="">
-                        <div id="top-area" class="top-area">    <!-- 로고 -->
+                    <div id="main-contents">
+                        <div id="top-area" class="top-area">
+                            <!-- 로고 -->
                             <div class="col-2">
                                 <h1 class="hd-logo" style="z-index: 100; position: relative;">
                                     <a href="#">
@@ -40,349 +41,58 @@
                                 </h1>
                             </div>
                         </div>
-                            <!-- 네비게이션 -->
-                            <nav class="gnb-wrap">
-                                <ul class="gnb">
-                                    <li>
-                                        <a href="#">Friendly</a>
-                                        <ul style="display: none">
-                                            <li><a href="">Talk</a></li>
-                                            <li><a href="">Earth</a></li>
-                                            <li><a href="">Neighbor</a></li>
-                                        </ul>
-                                    </li> 
 
-                                    <li>
-                                        <a href="#">Professional</a>
-                                        <ul style="display: none">
-                                            <li>
-                                                <a href="#">Business</a>
-                                                <ul class="uline">
-                                                    <li><a href="">건자재.유통</a></li>
-                                                    <li><a href="">금융</a></li>
-                                                    <li><a href="">물류.IT</a></li>
-                                                    <li><a href="">레저.엔터테인먼트</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="">People</a></li>
-                                            <li><a href="">Newsroom</a></li>
-                                        </ul>
-                                    </li>
+                        <!-- 네비게이션 -->
+                        <nav class="gnb-wrap">
+                            <ul class="gnb">
 
-                                    <li>
-                                        <a href="#">Eugene</a>
-                                        <ul style="display: none">
-                                            <li><a href="">History</a></li>
-                                            <li><a href="">Vision</a></li>
-                                            <li><a href="">PR</a></li>
-                                            <li><a href="">IR</a></li>
-                                            <li><a href="">Network</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
+                                <li>
+                                    <a href="#">Friendly</a>
+                                    <ul style="display: none">
+                                        <li><a href="">Talk</a></li>
+                                        <li><a href="">Earth</a></li>
+                                        <li><a href="">Neighbor</a></li>
+                                    </ul>
+                                </li> 
 
-                        <!-- 메인 -->
-                        <main id="contents">
-                            <section>
-                                
-                                <!-- 슬라이드 -->
-                                <ul id="slide"></ul>
-                                <!-- 이동버튼 -->
-                                <a href="#" class="abtn ab1"><img src="./images/bu-arrow-next.png" alt="왼쪽이동버튼"/></a>
-                                <a href="#" class="abtn ab2"><img src="./images/bu-arrow-prev.png" alt="오른쪽이동버튼"/></a>
-                                <!-- 블릿버튼 -->
-                                <ol class="indic"></ol>
-
-
-                                    <div>
-                                        <!-- 1 -->
-                                        <div class="vs-txt">
-                                            <h2>
-                                                Sustainable Growth <br class="pc-br" />
-                                                Through Innovation
-                                            </h2>
-                                            <p>
-                                                유진은 새로운 경험을 바탕으로<br class="pc-br" />
-                                                변화와 혁신에 끊임 없이 도전 하겠습니다.
-                                            </p>
-                                        </div>
-                                        <div class="vs-bg" style="background-image: url(images/visual01.jpg)"></div>
-                                        <!-- 2 -->
-                                        <div class="vs-txt">
-                                            <h2>
-                                                ESG management <br class="pc-br" />
-                                                for future generations
-                                            </h2>
-                                            <p>
-                                                유진은 자라나는 미래 세대를 위해 <br class="pc-br" />
-                                                ESG 경영을 실천하고 있습니다.
-                                            </p>
-                                        </div>
-                                        <div class="vs-bg" style="background-image: url(images/visual02.jpg)"></div>
-                                        <!-- 3 -->
-                                        <div class="vs-txt">
-                                            <h2>
-                                                Your Dream is <br class="pc-br" />
-                                                Our Passion
-                                            </h2>
-                                            <p>
-                                                우리가 힘껏 뛸수록 당신은 맘껏 펼칠 수 있으니까 <br class="pc-br" />
-                                                나의 힘껏, 너의 맘껏
-                                            </p>
-                                        </div>
-                                        <div class="vs-bg" style="background-image: url(images/visual03.jpg)"></div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <!-- 유진 Live & More -->
-                            <div
-                                class="pin-spacer"
-                                style="float: none; display: block; overflow: visible; position: relative"
-                            >
-                                <section
-                                    id="main-intro"
-                                    style="transform: translate3d(0px, 0px, 0px); overflow: hidden"
-                                >
-                                    <div class="intro-copy">
-                                        <div class="intro-copy-con">
-                                            <h1>
-                                                <span class="copy-word01">EUGENE</span>
-                                                <span class="copy-word02">Live &amp;</span>
-                                                <span class="copy-word03">More</span>
-                                            </h1>
-                                        </div>
-
-                                        <div class="intro-gallery">
-                                            <ul class="gall-list">
-                                                <!-- 유튜브01 -->
-                                                <li id="gall-item01">
-                                                    <iframe
-                                                        width="300px"
-                                                        src="https://www.youtube.com/embed/oVTikq809Yc?si=Z2r5mSJuDxSyB8lk"
-                                                    ></iframe>
-                                                    <p>#유진그룹 #유진이 #나의힘껏너의맘껏</p>
-                                                    <h5>유진이가 뭐 하는지 58초 안에 알려드림</h5>
-                                                </li>
-
-                                                <!-- 유튜브02 -->
-                                                <li id="gall-item02">
-                                                    <iframe
-                                                        width="300px"
-                                                        src="https://www.youtube.com/embed/290EbEhtkIE?si=DTeqi03g7tH0AF3n"
-                                                    ></iframe>
-                                                    <p>#유진투자증권 #증권맨 #투자꿀팁</p>
-                                                    <h5>궁금했던 증권사의 진짜 이야기, 지금 확인해보세요!</h5>
-                                                </li>
-
-                                                <!-- 유튜브03 -->
-                                                <li id="gall-item03">
-                                                    <iframe
-                                                        width="300px"
-                                                        src="https://www.youtube.com/embed/ms04vZOLGJ8?si=y0BjVgLAAeOoXjim"
-                                                    ></iframe>
-                                                    <p>#유진어린이집 #보육교사 #귀염뽀짝</p>
-                                                    <h5>
-                                                        귀염뽀짝 어린이집 교사의 하루, 어린이집 자장가 이렇게
-                                                        들려준다고?
-                                                    </h5>
-                                                </li>
-
-                                                <!-- 유튜브04 -->
-                                                <li id="gall-item04">
-                                                    <iframe
-                                                        width="300px"
-                                                        src="https://www.youtube.com/embed/gkqWafWqXJs?si=bqKSwvgif50wKlFi"
-                                                        style="clip-path: circle()"
-                                                    ></iframe>
-                                                    <p>우리가 힘껏 뛸수록 당신은 맘껏 펼칠 수 있으니까</p>
-                                                </li>
-
-                                                <!-- 유튜브05 -->
-                                                <li id="gall-item05">
-                                                    <iframe
-                                                        width="300px"
-                                                        src="https://www.youtube.com/embed/y2dadNLU4B0?si=njut2WpHFDrsDwJq"
-                                                        style="clip-path: circle()"
-                                                    ></iframe>
-                                                    <p>#디벨로퍼 #부동산개발 #유진기업</p>
-                                                    <h5>현직 디벨로퍼의 부동산 개발업 취업 꿀팁</h5>
-                                                </li>
-
-                                                <!-- 유튜브06 -->
-                                                <li id="gall-item06">
-                                                    <iframe
-                                                        width="300px"
-                                                        src="https://www.youtube.com/embed/NfWka3K1yzY?si=IQwN7sQTdgCgdwjH"
-                                                    ></iframe>
-                                                    <p>#유진그룹 #사회공헌활동 #유진어린이집 #기부</p>
-                                                    <h5>더 나은 미래를 위해, 유진그룹 사회공헌 영상</h5>
-                                                </li>
+                                <li>
+                                    <a href="#">Professional</a>
+                                    <ul style="display: none">
+                                        <li>
+                                            <a href="#">Business</a>
+                                            <ul class="uline">
+                                                <li><a href="">건자재.유통</a></li>
+                                                <li><a href="">금융</a></li>
+                                                <li><a href="">물류.IT</a></li>
+                                                <li><a href="">레저.엔터테인먼트</a></li>
                                             </ul>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
+                                        </li>
+                                        <li><a href="">People</a></li>
+                                        <li><a href="">Newsroom</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">Eugene</a>
+                                    <ul style="display: none">
+                                        <li><a href="">History</a></li>
+                                        <li><a href="">Vision</a></li>
+                                        <li><a href="">PR</a></li>
+                                        <li><a href="">IR</a></li>
+                                        <li><a href="">Network</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                    </div>  <!-- main-contents -->
+                </div>  <!-- main -->
+            </div>  <!-- smooth-scroll -->
+        </div>  <!-- wrap ko-wrap -->
 
 
 
-
-                            <!-- (((Creative EUGENE SNS Channel))) -->
-                            <section class="main-sns">
-                                <div class="main-tit">
-                                    <h2 class="tit">Creative EUGENE<br />SNS Channel</h2>
-                                </div>
-                                <div class="swiper-slide swiper-slide-active"></div>
-
-                                <div class="main-img">
-                                    <div>
-                                        <a href="main-img">
-                                            <img
-                                                src="../2차시도/images/mainsns173576_0.png"
-                                                alt=""
-                                                style="width: 348.667px; margin-right: 100px"
-                                            />
-                                        </a>
-                                        <p>[건자재TALK] 녹색건축인증 획득의 비결은 유진기업 친환경 건자재!</p>
-                                    </div>
-                                    <div>
-                                        <p>
-                                            <a href="#">
-                                                <img
-                                                    src="../2차시도/images/mainsns180642_0.png"
-                                                    alt=""
-                                                    style="width: 348.667px; margin-right: 100px"
-                                                />
-                                            </a>
-                                            [건자재TALK]10편, 아이들의 안전을 지켜주는 친환경 바닥재! 유진기업 ‘홈데이
-                                            러버플로링’
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <a href="#">
-                                            <img
-                                                src="../2차시도/images/mainsns180695_0.jpg"
-                                                alt=""
-                                                style="width: 348.667px; margin-right: 100px"
-                                            />
-                                        </a>
-                                        <p>월간유진 1호</p>
-                                    </div>
-                                    <div>
-                                        <a href="#">
-                                            <img
-                                                src="../2차시도/images/mainsns173340_0.jpg"
-                                                alt=""
-                                                style="width: 348.667px; margin-right: 100px"
-                                            />
-                                        </a>
-                                        <p>AI 분야에 취업하고 싶은 사람 모여라</p>
-                                    </div>
-                                    <div>
-                                        <a href="#">
-                                            <img
-                                                src="../2차시도/images/mainsns196790_0.png"
-                                                alt=""
-                                                style="width: 348.667px; margin-right: 100px"
-                                            />
-                                        </a>
-                                        <p>증권사 PB가 살펴본 2024년 주목해야 할 주식투자 업종은?</p>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <!-- Reliable EUGENE NEWS -->
-                            <section class="main-news">
-                                <div class="news-con">
-                                    <div class="maxinner">
-                                        <div class="left">
-                                            <div class="main-tit">
-                                                <h2 class="tit">Reliable EUGENE<br />NEWS</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right">
-                                        <ul class="news-list">
-                                            <div class="cursor-imgbox">
-                                                <div class="img">
-                                                    <img src="../2차시도/images/business-img04.jpg" alt="" />
-                                                    <li>
-                                                        <h3>푸른솔GC, 봄맞이 이벤트 활짝</h3>
-                                                    </li>
-                                                </div>
-                                                <div class="img">
-                                                    <img src="../2차시도/images/STO.jpg" alt="" />
-                                                    <li>
-                                                        <h3>유진투자증권 토큰증권 발행(STO) 플랫폼 구축 완료!</h3>
-                                                    </li>
-                                                </div>
-                                                <div class="img">
-                                                    <img src="../2차시도/images/masterPB.jpg" alt="" />
-                                                    <li>
-                                                        <h3>‘마스터(Master) PB’로 종합자산관리 경쟁력 업그레이드!</h3>
-                                                    </li>
-                                                </div>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <div class="main-CoreValues">
-                                <h1>Management Philosophy and Core Values</h1>
-                            </div>
-
-                            <!-- Proactive EUGENE -->
-                            <section class="main-business">
-                                <div class="maxinner">
-                                    <div class="main-tit">
-                                        <h2 class="tit">Proactive EUGENE<br />Business</h2>
-                                    </div>
-                                    <div class="img">
-                                        <img src="../2차시도/images/business-img01.jpg" alt="" />
-                                        <div class="txt">
-                                            <span>Construction Materials / Distribution 건자재/유통 </span>
-                                        </div>
-                                    </div>
-                                    <div class="img">
-                                        <img src="../2차시도/images/business-img02.jpg" alt="" />
-                                        <div class="txt">
-                                            <span>finance 금융 </span>
-                                        </div>
-                                    </div>
-                                    <div class="img">
-                                        <img src="../2차시도/images/business-img03.jpg" alt="" />
-                                        <div class="txt">
-                                            <span>Logistics / IT 물류/IT </span>
-                                        </div>
-                                    </div>
-                                    <div class="img">
-                                        <img src="../2차시도/images/business-img04.jpg" alt="" />
-                                        <div class="txt">
-                                            <span>Leisure / Entertainment 레저/엔터테인먼트 </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <!-- Eugene Recruit -->
-                            <section class="main-recruit">
-                                <div class="maxinner">
-                                    <div class="left">
-                                        <h2>Eugene Recruit</h2>
-                                        <p>열정과 도전정신 넘치는 인재를 모집합니다.</p>
-                                    </div>
-                                </div>
-                            </section>
-                        </main>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </head>
-
-    <body>
         <!--------------- 마우스 --------------->
         <!-- 컨텐츠 박스 -->
         <div class="cont-box"></div>
@@ -394,14 +104,313 @@
             <ul id="slide"></ul>
 
             <!--이동버튼-->
-            <a href="#" class="abtn ab1"><img src="images/bu-arrow-next.png" alt="왼쪽이동버튼" /></a>
-            <a href="#" class="abtn ab2"><img src="images/bu-arrow-prev.png" alt="오른쪽이동버튼" /></a>
+            <a href="#" class="abtn ab1"><img src="images/bu-arrow-prev.png" alt="왼쪽이동버튼" /></a>
+            <a href="#" class="abtn ab2"><img src="images/bu-arrow-next.png" alt="오른쪽이동버튼" /></a>
 
             <!--블릿버튼-->
             <ol class="indic"></ol>
         </section>
         <!--------------  -------------->
 
+
+
+    </head>
+
+
+
+    <!-- 메인 -->
+    <body>
+        <main id="contents">
+            <section>
+                    <div>
+                        <!-- 1 -->
+                        <div class="vs-txt">
+                            <h2>
+                                Sustainable Growth <br class="pc-br" />
+                                Through Innovation
+                            </h2>
+                            <p>
+                                유진은 새로운 경험을 바탕으로<br class="pc-br" />
+                                변화와 혁신에 끊임 없이 도전 하겠습니다.
+                            </p>
+                        </div>
+                        <div class="vs-bg" style="background-image: url(images/visual01.jpg)"></div>
+                        <!-- 2 -->
+                        <div class="vs-txt">
+                            <h2>
+                                ESG management <br class="pc-br" />
+                                for future generations
+                            </h2>
+                            <p>
+                                유진은 자라나는 미래 세대를 위해 <br class="pc-br" />
+                                ESG 경영을 실천하고 있습니다.
+                            </p>
+                        </div>
+                        <div class="vs-bg" style="background-image: url(images/visual02.jpg)"></div>
+                        <!-- 3 -->
+                        <div class="vs-txt">
+                            <h2>
+                                Your Dream is <br class="pc-br" />
+                                Our Passion
+                            </h2>
+                            <p>
+                                우리가 힘껏 뛸수록 당신은 맘껏 펼칠 수 있으니까 <br class="pc-br" />
+                                나의 힘껏, 너의 맘껏
+                            </p>
+                        </div>
+                        <div class="vs-bg" style="background-image: url(images/visual03.jpg)"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 유진 Live & More -->
+            <div class="pin-spacer"
+                style="
+                        float: none;
+                        display: block;
+                        overflow: visible;
+                        position: relative;
+                        padding: 800px 0;
+                        height: 4500px;">
+
+<div class="intro-copy-con">
+    <h1>
+        <span class="copy-word01">EUGENE <br></span>
+        <span class="copy-word02">Live &amp; <br></span>
+        <span class="copy-word03">More</span>
+    </h1>
+</div>
+                <section
+                    id="main-intro"
+                    style="transform: translate3d(0px, 0px, 0px); overflow: hidden">
+
+                    <div class="intro-copy">
+
+                        <div class="intro-gallery">
+                            <ul class="gall-list">
+                                <!-- 유튜브01 -->
+                                <li id="gall-item01">
+                                    <iframe
+                                        width="300px"
+                                        src="https://www.youtube.com/embed/oVTikq809Yc?si=Z2r5mSJuDxSyB8lk"
+                                    ></iframe>
+                                    <p>#유진그룹 #유진이 #나의힘껏너의맘껏</p>
+                                    <h5>유진이가 뭐 하는지 58초 안에 알려드림</h5>
+                                </li>
+
+                                <!-- 유튜브02 -->
+                                <li id="gall-item02">
+                                    <iframe
+                                        width="300px"
+                                        src="https://www.youtube.com/embed/290EbEhtkIE?si=DTeqi03g7tH0AF3n"
+                                    ></iframe>
+                                    <p>#유진투자증권 #증권맨 #투자꿀팁</p>
+                                    <h5>궁금했던 증권사의 진짜 이야기, 지금 확인해보세요!</h5>
+                                </li>
+
+                                <!-- 유튜브04 -->
+                                <li id="gall-item04">
+                                    <iframe
+                                    width="300px"
+                                    src="https://www.youtube.com/embed/gkqWafWqXJs?si=bqKSwvgif50wKlFi"
+                                    style="clip-path: circle()"
+                                    ></iframe>
+                                    <p>우리가 힘껏 뛸수록 당신은 맘껏 펼칠 수 있으니까</p>
+                                </li>
+                                
+                                <!-- 유튜브03 -->
+                                <li id="gall-item03">
+                                    <iframe
+                                    width="100%"
+                                    height="100%"
+                                    background-size: cover;
+                                    src="https://www.youtube.com/embed/ms04vZOLGJ8?si=y0BjVgLAAeOoXjim"
+                                    ></iframe>
+                                    <!-- <p>#유진어린이집 #보육교사 #귀염뽀짝</p>
+                                    <h5>
+                                        귀염뽀짝 어린이집 교사의 하루, 어린이집 자장가 이렇게
+                                        들려준다고?
+                                    </h5> -->
+                                </li>
+                                
+                                <!-- 유튜브05 -->
+                                <li id="gall-item05">
+                                    <iframe
+                                        width="300px"
+                                        src="https://www.youtube.com/embed/y2dadNLU4B0?si=njut2WpHFDrsDwJq"
+                                        style="clip-path: circle()"
+                                    ></iframe>
+                                    <p>#디벨로퍼 #부동산개발 #유진기업</p>
+                                    <h5>현직 디벨로퍼의 부동산 개발업 취업 꿀팁</h5>
+                                </li>
+
+                                <!-- 유튜브06 -->
+                                <li id="gall-item06">
+                                    <iframe
+                                        width="300px"
+                                        src="https://www.youtube.com/embed/NfWka3K1yzY?si=IQwN7sQTdgCgdwjH"
+                                    ></iframe>
+                                    <p>#유진그룹 #사회공헌활동 #유진어린이집 #기부</p>
+                                    <h5>더 나은 미래를 위해, 유진그룹 사회공헌 영상</h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>  <!-- 유진 Live & More 끝 -->
+
+            <!-- Creative EUGENE SNS Channel 시작 -->
+            <section class="main-sns">
+                <div class="main-tit">
+                    <h2 class="tit">Creative EUGENE<br />SNS Channel</h2>
+                </div>
+                <div class="swiper-slide swiper-slide-active"></div>
+
+                <div class="main-img">
+                    <div>
+                        <a href="main-img">
+                            <img
+                                src="../2차시도/images/mainsns173576_0.png"
+                                alt=""
+                                style="width: 348.667px; margin-right: 100px"
+                            />
+                        </a>
+                        <p>[건자재TALK] 녹색건축인증 획득의 비결은 유진기업 친환경 건자재!</p>
+                    </div>
+                    <div>
+                        <p>
+                            <a href="#">
+                                <img
+                                    src="../2차시도/images/mainsns180642_0.png"
+                                    alt=""
+                                    style="width: 348.667px; margin-right: 100px"
+                                />
+                            </a>
+                            [건자재TALK]10편, 아이들의 안전을 지켜주는 친환경 바닥재! 유진기업 ‘홈데이
+                            러버플로링’
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img
+                                src="../2차시도/images/mainsns180695_0.jpg"
+                                alt=""
+                                style="width: 348.667px; margin-right: 100px"
+                            />
+                        </a>
+                        <p>월간유진 1호</p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img
+                                src="../2차시도/images/mainsns173340_0.jpg"
+                                alt=""
+                                style="width: 348.667px; margin-right: 100px"
+                            />
+                        </a>
+                        <p>AI 분야에 취업하고 싶은 사람 모여라</p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img
+                                src="../2차시도/images/mainsns196790_0.png"
+                                alt=""
+                                style="width: 348.667px; margin-right: 100px"
+                            />
+                        </a>
+                        <p>증권사 PB가 살펴본 2024년 주목해야 할 주식투자 업종은?</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Creative EUGENE SNS Channel 끝 -->
+
+            <!-- Reliable EUGENE NEWS 시작 -->
+            <section class="main-news">
+                <div class="news-con">
+                    <div class="maxinner">
+                        <div class="left">
+                            <div class="main-tit">
+                                <h2 class="tit">Reliable EUGENE<br />NEWS</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <ul class="news-list">
+                            <div class="cursor-imgbox">
+                                <div class="img">
+                                    <img src="../2차시도/images/business-img04.jpg" alt="" />
+                                    <li>
+                                        <h3>푸른솔GC, 봄맞이 이벤트 활짝</h3>
+                                    </li>
+                                </div>
+                                <div class="img">
+                                    <img src="../2차시도/images/STO.jpg" alt="" />
+                                    <li>
+                                        <h3>유진투자증권 토큰증권 발행(STO) 플랫폼 구축 완료!</h3>
+                                    </li>
+                                </div>
+                                <div class="img">
+                                    <img src="../2차시도/images/masterPB.jpg" alt="" />
+                                    <li>
+                                        <h3>‘마스터(Master) PB’로 종합자산관리 경쟁력 업그레이드!</h3>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Reliable EUGENE NEWS 끝 -->
+
+            <div class="main-CoreValues">
+                <h1>Management Philosophy and Core Values</h1>
+            </div>  <!-- main-CoreValues -->
+
+            <!-- Proactive EUGENE 시작 -->
+            <section class="main-business">
+                <div class="maxinner">
+                    <div class="main-tit">
+                        <h2 class="tit">Proactive EUGENE<br />Business</h2>
+                    </div>
+                    <div class="img">
+                        <img src="../2차시도/images/business-img01.jpg" alt="" />
+                        <div class="txt">
+                            <span>Construction Materials / Distribution 건자재/유통 </span>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="../2차시도/images/business-img02.jpg" alt="" />
+                        <div class="txt">
+                            <span>finance 금융 </span>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="../2차시도/images/business-img03.jpg" alt="" />
+                        <div class="txt">
+                            <span>Logistics / IT 물류/IT </span>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="../2차시도/images/business-img04.jpg" alt="" />
+                        <div class="txt">
+                            <span>Leisure / Entertainment 레저/엔터테인먼트 </span>
+                        </div>
+                    </div>
+                </div>
+            </section>  <!-- Proactive EUGENE 끝 -->
+
+            <!-- Eugene Recruit 시작 -->
+            <section class="main-recruit">
+                <div class="maxinner">
+                    <div class="left">
+                        <h2>Eugene Recruit</h2>
+                        <p>열정과 도전정신 넘치는 인재를 모집합니다.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Eugene Recruit 끝 -->
+
+        </main> <!-- main #contents -->
     </body>
 
 

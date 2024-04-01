@@ -125,33 +125,7 @@ ol::after,
     left: 5%;
 }
 
-/******************** 슬라이드 시작 ********************/
-/* 슬라이드 */
-.indic {
-    display: flex;
-    position: absolute;
-    bottom: 50px;   /* 블릿버튼 */
-    left: 80px;     /* 블릿버튼 */
-}
 
-/*이동버튼*/
-.abtn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    /*Y축 중앙이동*/
-}
-
-/*왼쪽버튼*/
-.ab1 {
-    left: 50px;
-}
-
-/*오른쪽버튼*/
-.ab2 {
-    right: 50px;
-}
-/******************** 슬라이드 끝 ********************/
 
 
 
@@ -282,18 +256,6 @@ ol::after,
     transform: translate(-22.6%, 0%);
 }
 #main-intro .intro-gallery .gall-list #gall-item03 {
-    padding-bottom: 16.146%;
-    width: 19.792%;
-    -webkit-transform: translate(134.2%, 0%);
-    -moz-transform: translate(134.2%, 0%);
-    -ms-transform: translate(134.2%, 0%);
-    -o-transform: translate(134.2%, 0%);
-    transform: translate(134.2%, 0%);
-}
-#main-intro .intro-gallery .gall-list #gall-item03 a {
-    border-radius: 5em;
-}
-#main-intro .intro-gallery .gall-list #gall-item04 {
     padding-bottom: 40.625%;
     width: 27.084%;
     border-radius: 9.5em;
@@ -303,8 +265,20 @@ ol::after,
     -o-transform: translate(-23%, 0%);
     transform: translate(-23%, 0%);
 }
-#main-intro .intro-gallery .gall-list #gall-item04 a {
+#main-intro .intro-gallery .gall-list #gall-item03 a {
     border-radius: 9.5em;
+}
+#main-intro .intro-gallery .gall-list #gall-item04 {
+    padding-bottom: 16.146%;
+    width: 19.792%;
+    -webkit-transform: translate(134.2%, 0%);
+    -moz-transform: translate(134.2%, 0%);
+    -ms-transform: translate(134.2%, 0%);
+    -o-transform: translate(134.2%, 0%);
+    transform: translate(134.2%, 0%);
+}
+#main-intro .intro-gallery .gall-list #gall-item04 a {
+    border-radius: 5em;
 }
 #main-intro .intro-gallery .gall-list #gall-item05 {
     padding-bottom: 20.834%;

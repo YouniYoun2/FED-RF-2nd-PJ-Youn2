@@ -45,12 +45,12 @@ function loadFn() {
         </li>    
         `;
         // 블릿 넣기
-        indic.innerHTML += `
+/*         indic.innerHTML += `
         <li ${i === 0 ? 'class="on"' : ""}>
             <img src="images/bu-arrow-next.png" alt="">
             <img src="images/bu-arrow-prev.png" alt="">
         </li>
-        `;
+        `; */
     } ////// for ////////
 
     // li를 생성한 후 그 li다시 수집한다!
