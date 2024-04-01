@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./CSS/grid_12_float.css" />
         <link rel="stylesheet" href="./CSS/main.css" />
         <link rel="stylesheet" href="./CSS/reset.css" />
+        <link rel="stylesheet" href="./CSS/media.css">  <!-- 미디어쿼리 -->
 
         <!-- 폰트 -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -83,9 +84,17 @@
 
                         <!-- 메인 -->
                         <main id="contents">
-                            <section class="main-visual">
-                                <!-- (((swiper))) -->
-                                <div style="height: 953px">
+                            <section>
+                                
+                                <!-- 슬라이드 -->
+                                <ul id="slide"></ul>
+                                <!-- 이동버튼 -->
+                                <a href="#" class="abtn ab1"><img src="./images/bu-arrow-next.png" alt="왼쪽이동버튼"/></a>
+                                <a href="#" class="abtn ab2"><img src="./images/bu-arrow-prev.png" alt="오른쪽이동버튼"/></a>
+                                <!-- 블릿버튼 -->
+                                <ol class="indic"></ol>
+
+
                                     <div>
                                         <!-- 1 -->
                                         <div class="vs-txt">
@@ -398,6 +407,9 @@
 
     <!-- FOOT -->
     <footer id="footer">
+        <div class="logo">
+            <img src="./images/logo-white.png" alt="하단로고">
+        </div>
         <div class="maxinner">
             <div class="ft-top">
                 <div class="ft-menu">
@@ -418,7 +430,22 @@
                     <p class="copyright">Copyright © 2022 EUGENE GROUP All rights reserved.</p>
                 </div>
             </div>
-            <p>유튜브 / 페이스북 / 블로그 / 인스타그램</p>
+            <div class="sns-box">
+                <ol>
+                    <li>    <!-- 유튜브 -->
+                        <a class="fa-brands fa-youtube" href="#"></a>
+                    </li>
+                    <li>    <!-- 페이스북 -->
+                        <a class="fa-brands fa-square-facebook" href="#"></a>
+                    </li>
+                    <li>    <!-- 블로그 -->
+                        <a class="fa-solid fa-blog" href="#"></a>
+                    </li>
+                    <li>    <!-- 인스타그램 -->
+                        <a class="fa-brands fa-square-instagram" href="#"></a>
+                    </li>
+                </ol>
+            </div>
         </div>
     </footer>
 </html>

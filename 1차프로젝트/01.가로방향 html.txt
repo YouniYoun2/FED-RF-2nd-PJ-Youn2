@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>01.가로방향 배너 슬라이드</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="js/main1.js"></script>
+        <!-- 외부JS삽입 -->
+    </head>
+
+
+    
+
+    <body>
+        <section id="container">
+
+            <!--슬라이드 배너 영역-->
+            <section>
+                <!--슬라이드-->
+                <ul id="slide"></ul>
+
+                <!--이동버튼-->
+                <a href="#" class="abtn ab1"><img src="images/left_btn.png" alt="왼쪽이동버튼" /></a>
+                <a href="#" class="abtn ab2"><img src="images/right_btn.png" alt="오른쪽이동버튼" /></a>
+
+                <!--블릿버튼-->
+                <ol class="indic"></ol>
+
+            </section>
+
+        </section>
+    </body>
+</html>

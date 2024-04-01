@@ -47,9 +47,9 @@
   color: red;
 }
 
-/* 변수셋팅 */
+/* 원 사이즈 */
 :root {
-  --mover-size: 30px;
+  --mover-size: 25px;
 }
 
 /* 따라다니는 원 */
