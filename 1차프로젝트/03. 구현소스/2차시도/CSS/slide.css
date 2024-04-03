@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* 쇼핑몰 PJ 메인 CSS - main.css  */
 
 html,
 body {
@@ -9,57 +8,39 @@ body {
     height: 100%;
 }
 
-img {
-    border: none;
-}
-
-/*링크걸린 이미지 테두리 없앰*/
-
-
 ul,
 ol {
-    /*3무*/
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
-
-
-
 /**************************************/
 
 
-#container {
-    /*최상위부모*/
+#contents {
     position: relative;
-    width: 1381px;
+    width: 100%;
     margin: 0px auto;
 }
 
-#container>header {
+#contents>header {
     position: relative;
     width: 100%;
-    height: 222px;
+    /* height: 1384px; */
 }
 
-#container>section {
-    /*슬라이드부모*/
+#contents>section {
     position: relative;
-    width: 913px;
-    height: 564px;
+    /* width: 913px; */
+    /* height: 564px; */
     float: left;
-    overflow: hidden;
-    /*넘치는 자식요소 숨기기*/
-    /*    border: 2px solid red;*/
+    overflow: hidden;   /*넘치는 자식요소 숨기기*/
     box-sizing: border-box;
 }
 
 #slide {
     display: flex;
-    /* 플렉스박스!!! */
-
-    /*사진을 싸고 있는 슬라이드*/
-    position: absolute;
+    position: absolute; /*사진을 싸고 있는 슬라이드*/
     top: 0;
     left: 0;
     width: 100%;
@@ -68,19 +49,14 @@ ol {
 
 #slide li {
     flex-shrink: 0;
-    /* 부모박스크기만큼 줄어들지 않음 -> 0 */
     flex-basis: 100%;
-    /* 가로크기를 부모박스 크기에 맞춤! */
-    /* height 값은 flex박스 자식요소에서
-    등분할시 자동 100%임! */
 }
 
 #slide li img {
     /*이미지는 박스에 맞춤!*/
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    /* 이미지 비율유지 채우기! */
+    object-fit: cover;  /* 이미지 비율유지 채우기! */
 }
 
 /*이동버튼*/
@@ -133,14 +109,14 @@ ol {
     /*우선적용!*/
 }
 
-#container>aside {
+#contents>aside {
     position: relative;
     width: 467px;
     height: 564px;
     float: left;
 }
 
-#container>footer {
+#contents>footer {
     position: relative;
     width: 100%;
     height: 80px;

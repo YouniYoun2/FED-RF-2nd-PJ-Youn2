@@ -316,8 +316,14 @@ SNS Channel - 제목*/
 
 /* Creative EUGENE
 SNS Channel - 사진*/
-.main-img {
+.swiper-wrapper {
+    /* .main-img */
     display: flex;
+}
+.swiper-slide {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
 }
 
 /* Reliable EUGENE NEWS */
