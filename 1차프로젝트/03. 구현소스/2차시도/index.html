@@ -4,6 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>유진그룹</title>
     <link rel="stylesheet" href="./CSS/common.css" />
+
+        <!-- 마우스 -->
+        <script src="./js/following.js"defer style="z-index: 999;"> </script>
+        <link rel="stylesheet" href="./CSS/following.css">
+
         <link rel="stylesheet" href="./CSS/core.css" />
         <link rel="stylesheet" href="./CSS/grid_12_float.css" />
         <link rel="stylesheet" href="./CSS/main.css" />
@@ -17,15 +22,19 @@
         <link rel="stylesheet" href="https://eugenes.co.kr/theme/basic/css/fonts/font.css" />
         <link rel="stylesheet" href="https://eugenes.co.kr/js/font-awesome/css/font-awesome.min.css" />
 
-        <!-- 마우스 -->
-        <script src="./js/following.js"defer></script>
-        <link rel="stylesheet" href="./CSS/following.css">
         <!-- 슬라이드 -->
         <link rel="stylesheet" href="CSS/slide.css"/>
         <script src="js/slide.js"></script>
         
         
     <head>
+        <!--------------- 마우스 --------------->
+        <!-- 컨텐츠 박스 -->
+        <div class="cont-box"></div>
+        <!-- 따라다니는 원 -->
+        <div class="mover"></div>
+        <!--------------- 마우스 끝 --------------->
+
         <div class="wrap ko-wrap">
             <div class="smooth-scroll">
                 <div id="main">
@@ -93,11 +102,7 @@
 
 
 
-        <!--------------- 마우스 --------------->
-        <!-- 컨텐츠 박스 -->
-        <div class="cont-box"></div>
-        <!-- 따라다니는 원 -->
-        <div class="mover"></div>
+
         <!-------------- 슬라이드 -------------->
         <section>
             <!--슬라이드-->
@@ -173,13 +178,14 @@
                         padding: 800px 0;
                         height: 4500px;">
 
-<div class="intro-copy-con">
-    <h1>
-        <span class="copy-word01">EUGENE <br></span>
-        <span class="copy-word02">Live &amp; <br></span>
-        <span class="copy-word03">More</span>
-    </h1>
-</div>
+                <div class="intro-copy-con">
+                    <h1>
+                        <span class="copy-word01">EUGENE <br></span>
+                        <span class="copy-word02">Live &amp; <br></span>
+                        <span class="copy-word03">More</span>
+                    </h1>
+                </div>
+                
                 <section
                     id="main-intro"
                     style="transform: translate3d(0px, 0px, 0px); overflow: hidden">

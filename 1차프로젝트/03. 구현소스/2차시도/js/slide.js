@@ -34,8 +34,8 @@ function loadFn() {
 
 
     
-    // 3개의 슬라이드와 2개의 블릿을 만들기
-    for (let i = 1; i < 3; i++) {
+    // 3개의 슬라이드와 2개의 블릿 만들기
+    for (let i = 1; i < 4; i++) {
         // 슬라이드 넣기
         slide.innerHTML += `
         <li data-seq="${i}">
@@ -60,10 +60,10 @@ function loadFn() {
     // 슬라이드 순번 전역변수
     let snum = 0;
 
-    // 2. 버튼을 모두 이벤트 설정하기
+    // 2. 모든 버튼에 이벤트 설정하기
     for (let x of abtn) {
         x.onclick = goSlide;
-    } /// for of ///
+    }
 
     // 광클 금지변수
     let prot = false;
@@ -84,7 +84,7 @@ function loadFn() {
             clearAuto();
         }
 
-        // 광클금지 설정하기 ///////////
+        // 광클금지 설정
         // 클릭신호를 막아서 못들어오게 하고 일정시간후 다시 열어준다!
         if (prot) return; // 돌아가!(함수나감!)
         prot = true; // 잠금! (뒤의호출막기!)
