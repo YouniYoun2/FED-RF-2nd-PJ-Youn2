@@ -61,10 +61,9 @@
   width: var(--mover-size);
   height: var(--mover-size);
   border-radius: 50%;
-  background-color: aqua;
+  background-color: #0457fe;
 
-  /* 자기자신요소는 이벤트가 무시되게 셋팅해야
-    아래쪽 요소를 만질 수 있음 */
+  /* 자기자신요소는 이벤트가 무시되게 셋팅해야 아래쪽 요소를 만질 수 있음 */
   pointer-events: none;
 
   mix-blend-mode: exclusion;

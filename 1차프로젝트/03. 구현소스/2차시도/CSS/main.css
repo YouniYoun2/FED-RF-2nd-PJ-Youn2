@@ -34,41 +34,7 @@ ol::after,
 
 
 
-/* 마우스 커서 */
-.cursor {
-    pointer-events: fill;
-}
-.cursor .cursor-ball {
-    position: fixed;
-    top: 0;
-    left: 0;
-    mix-blend-mode: difference;
-    z-index: 5000;
-}  
-.cursor .cursor-ball .text {
-    position:absolute;
-    left:50%;
-    top:50%;
-    -webkit-transform:translate(-50%,-50%);
-    -moz-transform:translate(-50%,-50%);
-    -ms-transform:translate(-50%,-50%);
-    -o-transform:translate(-50%,-50%);
-    transform:translate(-50%,-50%);
-    font-size:2.1rem;
-    color:#ff1616;
-    font-weight:700;
-}
-.cursor .cursor-ball circle {
-    fill: #0457fe;
-} 
-.cursor-able {
-    cursor:pointer;
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .cursor .cursor-ball circle{
-        fill: #0042bf;
-    }
-}
+
 
 
 
@@ -86,11 +52,11 @@ ol::after,
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
+    background-size: cover;
     /* background-position: center center; */
-    /* background-size: cover; */
     /* transform: scale(1.1); */
     transition-duration: 3s;
-    /* display: flex; */
+    display: flex;
     /* overflow: hidden; */
     opacity: 100%;
     transition: 0.5s ease-in-out;
@@ -142,7 +108,7 @@ ol::after,
     /* left: 0px; */
     left: 10%;
     /* top: 0px; */
-    top: 20%;
+    top: 35%;
     bottom: 20px;
 
     /* margin: 0px; */
@@ -166,6 +132,7 @@ ol::after,
 }
 
 #main-intro .intro-gallery .gall-list {
+    transform: translate(0, 2.55%);
     height: 100%;
 }
 #main-intro .intro-gallery .gall-list .gall-item {
@@ -312,6 +279,7 @@ ol::after,
 SNS Channel - 제목*/
 .main-sns {
     color: #000;
+    transform: translateY(2800px);
 }
 
 /* Creative EUGENE
@@ -330,12 +298,18 @@ SNS Channel - 사진*/
 .main-news {
     background-color: #0042bf;
     color: #fff;
+    transform: translateY(5000px);
+    position: relative;
+    overflow: hidden;
+    display: block;
+
 }
 
 /* Management Philosophy and Core Values */
 .main-CoreValues {
     font-size: 4.5rem;
     color: #0042bf;
+    transform: translateY(6000px);
 }
 
 /* 7. 최신동영상영역 */
@@ -345,9 +319,10 @@ SNS Channel - 사진*/
 }
 
 /* 8. 하단영역 */
-#footer {
+#footer-area {
     height: 250px;
     background-color: #000;
+    transform: translateY(6000px);
 }
 
 .ft-menu {

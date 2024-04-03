@@ -1,7 +1,3 @@
-// 따라다니는 원 JS - following.js
-
-// 1. 초기세팅하기 : html 넣기
-// 대상 : .cont-box
 const contBox = document.querySelector(".cont-box");
 
 // html코드 변수
@@ -11,7 +7,6 @@ let hcode = "";
 //////// div > a href class="link" 잡아야함 ////////
 //////////// 그래야 색 반전효과 가능 ///////////////
 ///////////////////////////////////////////////////
-
 
 // 3. 코드넣기
 contBox.innerHTML = hcode;
@@ -38,6 +33,9 @@ myBody.onmouseenter = () => {
 myBody.onmouseleave = () => {
     mover.style.opacity = 0;
 };  // mouseleave //
+
+
+
 
 // 4. a요소(글자부분)에 오버시 원 커지게 하기
 // 대상 : .link

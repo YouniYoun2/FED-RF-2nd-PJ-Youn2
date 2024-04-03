@@ -12,7 +12,7 @@
 /* 공사중 표시 */
 body * {
     margin: 0 auto;
-    outline: 1px dashed #f27228;
+    outline: 1px dashed #81de0721;
 }
 
 /* 폰트 */
@@ -199,4 +199,162 @@ body, html, h1, h2, h3, h4, h5, h6, ul, dl, dt, dd, a {
 
 /************* 2. 메인영역 *************/
 /************* 3. 하단영역 *************/
+#footer {
+    position: relative;
+    z-index: 1;
+    background: #111111;
+    min-height: calc(100vh - -137rem);
+    transform: translateY(100%);
+}
+/* ft-top 사이버감사실,법적고지, 패밀리사이트 */
+#footer .ft-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+/* ft-menu 사이버감사실, 법적고지 */
+#footer .ft-top .ft-menu {
+    font-size: 0;
+}
+#footer .ft-top .ft-menu li {
+    display: inline-block;
+    margin-left: 30px;
+}
+#footer .ft-top .ft-menu li:first-child {
+    margin-left: 0;
+}
+#footer .ft-top .ft-menu li a {
+    font-size: 16px;
+    color: #fff;
+}
+/* ft-site 패밀리사이트 */
+#footer .ft-top .ft-site {
+    position: relative;
+    width: 190px;
+    border: 1px solid #595959;
+}
+#footer .ft-top .ft-site h2:after {
+    content: "";
+    /* position: absolute */
+    right: 18px;
+    top: 50%;
+    width: 11px;
+    margin-top: -1px;
+    height: 4px;
+    background: url(/img/bu/bu-family.png) no-repeat center;
+}
+#footer .ft-top .ft-site.open h2:after {
+    transform: rotate(180deg);
+}
+#footer .ft-top .ft-site h2 {
+    padding-left: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 48px;
+    cursor: pointer;
+}
+#footer .ft-top .ft-site ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+    background: #fff;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+}
+#footer .ft-top .ft-site ul li a {
+    font-size: 14px;
+    color: #aaa;
+    display: block;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+#footer .ft-top .ft-site ul li a:hover {
+    color: #111;
+}
 
+/* bt-btm 정보글, sns */
+#footer .ft-btm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 55px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+#footer .ft-btm .ft-addr {
+    width: calc(100% - 240px);
+}
+#footer .ft-btm address p {
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    font-size: 14px;
+    color: #aaa;
+    letter-spacing: -0.25px;
+    font-family: "Pretendard", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#footer .ft-btm address p:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    width: 1px;
+    height: 10px;
+    background: #484848;
+}
+#footer .ft-btm address p:first-child {
+    padding-left: 0;
+    margin-left: 0;
+}
+#footer .ft-btm p.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Poppins", sans-serif;
+}
+#footer .ft-btm .ft-sns {
+    font-size: 0;
+}
+#footer .ft-btm .ft-sns li {
+    display: inline-block;
+    margin-left: 10px;
+}
+#footer .ft-btm .ft-sns li:first-child {
+    margin-left: 0;
+}
+#footer .ft-btm .ft-sns li a {  
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #292929;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+#footer .ft-btm .ft-sns li a:hover {
+    background-color: #444;
+}
+
+#footer.en .ft-btm address {
+    display: flex;
+    flex-direction: column;
+}
+#footer.en .ft-btm address p {
+    padding: 0;
+    margin: 0;
+}

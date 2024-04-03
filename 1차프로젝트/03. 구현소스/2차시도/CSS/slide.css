@@ -15,13 +15,54 @@ ol {
     list-style: none;
 }
 /**************************************/
+    /* ChatGPT 도움 */
+.imgSlides {
+    display: none;
+}
+
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.vs-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.vs-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+}
+
+.active {
+    opacity: 1;
+}
+
+.slideIndex {
+    display: none;
+}
 
 
-#contents {
+
+/**************************************/
+/* #contents {
     position: relative;
     width: 100%;
     margin: 0px auto;
-}
+} */
 
 #contents>header {
     position: relative;

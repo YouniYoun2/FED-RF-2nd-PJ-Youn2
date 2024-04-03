@@ -45,7 +45,7 @@ function loadFn() {
         </li>    
         `;
         // 블릿 넣기
-/*         indic.innerHTML += `
+    /*     indic.innerHTML += `
         <li ${i === 0 ? 'class="on"' : ""}>
             <img src="images/bu-arrow-next.png" alt="">
             <img src="images/bu-arrow-prev.png" alt="">
@@ -84,8 +84,7 @@ function loadFn() {
             clearAuto();
         }
 
-        // 광클금지 설정
-        // 클릭신호를 막아서 못들어오게 하고 일정시간후 다시 열어준다!
+        // 광클금지 설정 (클릭신호 막아서 못들어오게 하고, 일정시간 후 다시 열어줌)
         if (prot) return; // 돌아가!(함수나감!)
         prot = true; // 잠금! (뒤의호출막기!)
         setTimeout(() => {
@@ -200,3 +199,23 @@ function clearAuto() {
         autoSlide();
     }, 5000);
 } /////// clearAuto ///////
+
+
+/* ChatGPT 도움 */
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("slideIndex");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
