@@ -22,8 +22,15 @@
         <script src="./js/following.js"defer></script>
         <link rel="stylesheet" href="./CSS/following.css">
         <!-- 슬라이드 -->
+        <script src="js/slide.js"defer></script>
         <link rel="stylesheet" href="CSS/slide.css" />
-        <script src="js/slide.js"></script>
+
+        <!--------------- 마우스 --------------->
+        <!-- 컨텐츠 박스 -->
+        <div class="cont-box"></div>
+        <!-- 따라다니는 원 -->
+        <div class="mover"></div>
+        <!--------------- 마우스 끝 --------------->
 
 
         <div class="wrap ko-wrap">
@@ -83,68 +90,79 @@
                             </nav>
 
                         <!-- 메인 -->
+<!-------------- 슬라이드 -------------->
+<section>
+    <!--슬라이드-->
+    <ul id="slide"></ul>
+    <!--이동버튼-->
+    <a href="#" class="abtn ab1"><img src="images/bu-arrow-prev.png" alt="왼쪽이동버튼" /></a>
+    <a href="#" class="abtn ab2"><img src="images/bu-arrow-next.png" alt="오른쪽이동버튼" /></a>
+    <!--블릿버튼-->
+    <ol class="indic"></ol>
+</section>
+<!-------------- 슬라이드 끝 -------------->
+
+
                         <main id="contents">
-                            <section>
-                                
-                                <!-- 슬라이드 -->
-                                <ul id="slide"></ul>
-                                <!-- 이동버튼 -->
-                                <a href="#" class="abtn ab1"><img src="./images/bu-arrow-next.png" alt="왼쪽이동버튼"/></a>
-                                <a href="#" class="abtn ab2"><img src="./images/bu-arrow-prev.png" alt="오른쪽이동버튼"/></a>
-                                <!-- 블릿버튼 -->
-                                <ol class="indic"></ol>
+                            <section class="main-visual">
 
-
-                                    <div>
-                                        <!-- 1 -->
-                                        <div class="vs-txt">
-                                            <h2>
-                                                Sustainable Growth <br class="pc-br" />
-                                                Through Innovation
-                                            </h2>
-                                            <p>
-                                                유진은 새로운 경험을 바탕으로<br class="pc-br" />
-                                                변화와 혁신에 끊임 없이 도전 하겠습니다.
-                                            </p>
-                                        </div>
-                                        <div class="vs-bg" style="background-image: url(images/visual01.jpg)"></div>
-                                        <!-- 2 -->
-                                        <div class="vs-txt">
-                                            <h2>
-                                                ESG management <br class="pc-br" />
-                                                for future generations
-                                            </h2>
-                                            <p>
-                                                유진은 자라나는 미래 세대를 위해 <br class="pc-br" />
-                                                ESG 경영을 실천하고 있습니다.
-                                            </p>
-                                        </div>
-                                        <div class="vs-bg" style="background-image: url(images/visual02.jpg)"></div>
-                                        <!-- 3 -->
-                                        <div class="vs-txt">
-                                            <h2>
-                                                Your Dream is <br class="pc-br" />
-                                                Our Passion
-                                            </h2>
-                                            <p>
-                                                우리가 힘껏 뛸수록 당신은 맘껏 펼칠 수 있으니까 <br class="pc-br" />
-                                                나의 힘껏, 너의 맘껏
-                                            </p>
-                                        </div>
-                                        <div class="vs-bg" style="background-image: url(images/visual03.jpg)"></div>
+                                <div style="height: 1384px;">
+                                    <!-- 1 -->
+                                    <div class="vs-txt">
+                                        <h2>
+                                            Sustainable Growth <br class="pc-br" />
+                                            Through Innovation
+                                        </h2>
+                                        <p>
+                                            유진은 새로운 경험을 바탕으로<br class="pc-br" />
+                                            변화와 혁신에 끊임 없이 도전 하겠습니다.
+                                        </p>
                                     </div>
+                                    <div class="vs-bg" style="background-image: url(images/visual01.jpg)"></div>
+                                    <!-- 2 -->
+                                    <div class="vs-txt">
+                                        <h2>
+                                            ESG management <br class="pc-br" />
+                                            for future generations
+                                        </h2>
+                                        <p>
+                                            유진은 자라나는 미래 세대를 위해 <br class="pc-br" />
+                                            ESG 경영을 실천하고 있습니다.
+                                        </p>
+                                    </div>
+                                    <div class="vs-bg" style="background-image: url(images/visual02.jpg)"></div>
+                                    <!-- 3 -->
+                                    <div class="vs-txt">
+                                        <h2>
+                                            Your Dream is <br class="pc-br" />
+                                            Our Passion
+                                        </h2>
+                                        <p>
+                                            우리가 힘껏 뛸수록 당신은 맘껏 펼칠 수 있으니까 <br class="pc-br" />
+                                            나의 힘껏, 너의 맘껏
+                                        </p>
+                                    </div>
+                                    <div class="vs-bg" style="background-image: url(images/visual03.jpg)"></div>
+
                                 </div>
                             </section>
 
                             <!-- 유진 Live & More -->
                             <div
                                 class="pin-spacer"
-                                style="float: none; display: block; overflow: visible; position: relative"
-                            >
+                                style="
+                                        float: none;
+                                        display: block;
+                                        overflow: visible;
+                                        position: relative;
+                                        margin: 50px;
+                                        height: 3812px;">
                                 <section
                                     id="main-intro"
-                                    style="transform: translate3d(0px, 0px, 0px); overflow: hidden"
-                                >
+                                    style="
+                                            transform: translate3d(0px, 0px, 0px);
+                                            overflow: hidden">
+
                                     <div class="intro-copy">
                                         <div class="intro-copy-con">
                                             <h1>
@@ -160,8 +178,8 @@
                                                 <li id="gall-item01">
                                                     <iframe
                                                         width="300px"
-                                                        src="https://www.youtube.com/embed/oVTikq809Yc?si=Z2r5mSJuDxSyB8lk"
-                                                    ></iframe>
+                                                        src="https://www.youtube.com/embed/oVTikq809Yc?si=Z2r5mSJuDxSyB8lk">
+                                                    </iframe>
                                                     <p>#유진그룹 #유진이 #나의힘껏너의맘껏</p>
                                                     <h5>유진이가 뭐 하는지 58초 안에 알려드림</h5>
                                                 </li>
@@ -232,62 +250,53 @@
                             <section class="main-sns">
                                 <div class="main-tit">
                                     <h2 class="tit">Creative EUGENE<br />SNS Channel</h2>
+                                    <!-- 슬라이드 해야함 -->
                                 </div>
-                                <div class="swiper-slide swiper-slide-active"></div>
 
-                                <div class="main-img">
-                                    <div>
+                                <div class="swiper-wrapper">    <!-- main-img -->
+
+                                    <div class="swiper-slide" style="width: 348.667px; margin-right: 100px">
                                         <a href="main-img">
-                                            <img
-                                                src="../2차시도/images/mainsns173576_0.png"
-                                                alt=""
-                                                style="width: 348.667px; margin-right: 100px"
-                                            />
+                                            <img src="../2차시도/images/mainsns173576_0.png"/>
                                         </a>
-                                        <p>[건자재TALK] 녹색건축인증 획득의 비결은 유진기업 친환경 건자재!</p>
+                                        <div class="txt">
+                                            <p>[건자재TALK] 녹색건축인증 획득의 비결은 유진기업 친환경 건자재!</p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p>
-                                            <a href="#">
-                                                <img
-                                                    src="../2차시도/images/mainsns180642_0.png"
-                                                    alt=""
-                                                    style="width: 348.667px; margin-right: 100px"
-                                                />
-                                            </a>
-                                            [건자재TALK]10편, 아이들의 안전을 지켜주는 친환경 바닥재! 유진기업 ‘홈데이
-                                            러버플로링’
-                                        </p>
-                                    </div>
-                                    <div>
+
+                                    <div class="swiper-slide" style="width: 348.667px; margin-right: 100px">
                                         <a href="#">
-                                            <img
-                                                src="../2차시도/images/mainsns180695_0.jpg"
-                                                alt=""
-                                                style="width: 348.667px; margin-right: 100px"
-                                            />
+                                            <img src="../2차시도/images/mainsns180642_0.png"/>
                                         </a>
-                                        <p>월간유진 1호</p>
+                                        <div class="txt">
+                                            <p>[건자재TALK]10편, 아이들의 안전을 지켜주는 친환경 바닥재! 유진기업 ‘홈데이
+                                                러버플로링’</p>
+                                        </div>
                                     </div>
-                                    <div>
+
+                                    <div class="swiper-slide" style="width: 348.667px; margin-right: 100px">
                                         <a href="#">
-                                            <img
-                                                src="../2차시도/images/mainsns173340_0.jpg"
-                                                alt=""
-                                                style="width: 348.667px; margin-right: 100px"
-                                            />
+                                            <img src="../2차시도/images/mainsns180695_0.jpg"/>
                                         </a>
-                                        <p>AI 분야에 취업하고 싶은 사람 모여라</p>
+                                        <div class="txt">
+                                            <p>월간유진 1호</p>
+                                        </div>
                                     </div>
-                                    <div>
+                                    <div class="swiper-slide" style="width: 348.667px; margin-right: 100px">
                                         <a href="#">
-                                            <img
-                                                src="../2차시도/images/mainsns196790_0.png"
-                                                alt=""
-                                                style="width: 348.667px; margin-right: 100px"
-                                            />
+                                            <img src="../2차시도/images/mainsns173340_0.jpg"/>
                                         </a>
-                                        <p>증권사 PB가 살펴본 2024년 주목해야 할 주식투자 업종은?</p>
+                                        <div class="txt">
+                                            <p>AI 분야에 취업하고 싶은 사람 모여라</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 348.667px; margin-right: 100px">
+                                        <a href="#">
+                                            <img src="../2차시도/images/mainsns196790_0.png"/>
+                                        </a>
+                                        <div class="txt">
+                                            <p>증권사 PB가 살펴본 2024년 주목해야 할 주식투자 업종은?</p>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
@@ -383,24 +392,7 @@
     </head>
 
     <body>
-        <!--------------- 마우스 --------------->
-        <!-- 컨텐츠 박스 -->
-        <div class="cont-box"></div>
-        <!-- 따라다니는 원 -->
-        <div class="mover"></div>
-        <!-------------- 슬라이드 -------------->
-        <section>
-            <!--슬라이드-->
-            <ul id="slide"></ul>
 
-            <!--이동버튼-->
-            <a href="#" class="abtn ab1"><img src="images/bu-arrow-next.png" alt="왼쪽이동버튼" /></a>
-            <a href="#" class="abtn ab2"><img src="images/bu-arrow-prev.png" alt="오른쪽이동버튼" /></a>
-
-            <!--블릿버튼-->
-            <ol class="indic"></ol>
-        </section>
-        <!--------------  -------------->
 
     </body>
 
