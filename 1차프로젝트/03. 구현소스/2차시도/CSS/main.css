@@ -33,6 +33,11 @@ ol::after,
 }
 
 
+.maxinner {
+    margin: 0 auto;
+    max-width: 150em;
+    width: 90%;
+}
 
 
 
@@ -41,8 +46,7 @@ ol::after,
 
 
 
-
-/* 1. 메인영역 */
+/**************** 1. 메인영역 ****************/
 .main-visual .vs-bg {
     /* 메인 사진 */
     background-size: cover; /* 공사중에 꽉차게 */
@@ -100,7 +104,7 @@ ol::after,
 
 
 
-/* 라이브 앤 모어 */
+/************* 2. Eugene Live&More *************/
 .intro-copy-con {
     transform: translate3d(0px, 0px, 0px);
     overflow: hidden;
@@ -126,28 +130,40 @@ ol::after,
     /* position: sticky; */
     position: fixed;
 }
-.pin-spacer {
-    /* 유진라이브앤모어 동영상들 */
+
+
+
+
+
+/* 유진라이브앤모어 동영상들 */
+.intro-pin {
     height: 1500px;
 }
 
+#main-intro .intro-gallery {
+    position:absolute;
+    left:0;
+    top: 1000px;
+    width:100%;
+    height:100%;
+}
 #main-intro .intro-gallery .gall-list {
-    transform: translate(0, 2.55%);
-    height: 100%;
+    height:100%;
+    /* transform: translateY(900px); */
 }
 #main-intro .intro-gallery .gall-list .gall-item {
-    overflow: hidden;
-    position: absolute;
-    left: 50%;
-    top: 100%;
+    overflow:hidden;
+    position:absolute;
+    left:50%;
+    top:100%;
 }
 #main-intro .intro-gallery .gall-list .gall-item .gall-item-con {
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    overflow:hidden;        
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
 }
 #main-intro .intro-gallery .gall-list .gall-item .gall-item-con.gall-youtube a:after {
     content: "";
@@ -268,6 +284,89 @@ ol::after,
     -o-transform: translate(79.7%, 0%);
     transform: translate(79.7%, 0%);
 }
+#main-intro .intro-gallery .gall-list .gall-item .img {
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+#main-intro .intro-gallery .gall-list .gall-item iframe {
+    width:100%;
+    height:100%;
+}
+#main-intro .intro-gallery .gall-list .gall-item .img > div {
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+#main-intro .intro-gallery .gall-list .gall-item .desc {
+    position:absolute;
+    left:7em;
+    bottom:4em;
+    z-index:1;
+    width:calc(100% - 14em);
+    text-align: center;
+	z-index:2;
+}
+#main-intro .intro-gallery .gall-list .gall-item .desc span {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display:block;
+    font-size:1.6rem;
+    color:#fff;
+    letter-spacing:-0.016em;
+}
+#main-intro .intro-gallery .gall-list .gall-item .desc p {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    margin-top:0.6em;
+    font-size:2.6rem;
+	font-weight:700;
+    color:#fff;
+}
+#main-intro .intro-btnwrap {
+    position: absolute;
+    left: 50%;
+    top: 112.5%;
+	margin-top:40em;
+    max-width: 1500px;
+    width: 90%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+	pointer-events:none;
+}
+#main-intro .intro-btnwrap .maxinner {
+	display:inline-block;
+    padding-left:0.5em;
+	max-width:none;
+	width:auto;
+	pointer-events:auto;
+}
+.fixee{z-index:99;} 
+.gall-youtube video{position: absolute;top: 50%;left: 50%;z-index: -1;height: 100%;min-width: 100%; transform:translate(-50%,-50%);}
+
+
+
+
+
+
+
 
 /* 하단 타이틀 공통 */
 .tit {
@@ -275,50 +374,258 @@ ol::after,
     height: 65%;
 }
 
-/* Creative EUGENE
-SNS Channel - 제목*/
+
+
+
+/***************** 3. Creative EUGENE SNS Channel *****************/
+/* 제목*/
 .main-sns {
     color: #000;
     transform: translateY(2800px);
 }
 
-/* Creative EUGENE
-SNS Channel - 사진*/
+/* 사진*/
 .swiper-wrapper {
     /* .main-img */
     display: flex;
 }
+/* 슬라이드 */
 .swiper-slide {
     overflow: hidden;
     position: relative;
     height: 100%;
 }
 
-/* Reliable EUGENE NEWS */
+
+
+
+
+
+
+/***************** 4. Reliable EUGENE NEWS *****************/
 .main-news {
     background-color: #0042bf;
     color: #fff;
-    transform: translateY(5000px);
+    transform: translateY(800px);
     position: relative;
     overflow: hidden;
     display: block;
 
 }
 
-/* Management Philosophy and Core Values */
-.main-CoreValues {
+/*************** 5. (Management Philosophy and Core Values) ***************/
+.main-CoreValues>h1{
     font-size: 4.5rem;
     color: #0042bf;
-    transform: translateY(6000px);
+    height: 100px;
+    transform: translateY(100px);
 }
 
-/* 7. 최신동영상영역 */
-.main-recruit {
-    height: 548px;
+
+/***************** 6. Proactive EUGENE Business *****************/
+.proactive-business {
+    position:relative;
+    padding:12em 0;
+    background:#fff;
+    transform: translateY(500px);
+}
+.proactive-business:after {
+    content:"";
+    position:absolute;
+    right:0;
+    bottom:-9em;
+    width:75.834%;
+    height:62.17%;
+    /*background:#f7f9fd;*/
+}
+.proactive-business .business-slider {
+    margin-top:6em;
+}
+.proactive-business .business-slider .swiper-slide a {
+    overflow:hidden;
+    display:block;
+    height:66em;
+}
+.proactive-business .business-slider .swiper-slide .thumb {
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+}
+.proactive-business .business-slider .swiper-slide .thumb > div {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.proactive-business .business-slider .swiper-slide .txt {
+    position:absolute;
+    left:5em;
+    bottom:5em;
+	width:calc(100% - 10em);
+    z-index:10;
+}
+.proactive-business .business-slider .swiper-slide .txt span {
+    display:block;
+    font-size:1.6rem;
+    color:#fff;
+    letter-spacing:-0.031em;
+}
+.proactive-business .business-slider .swiper-slide .txt p {
+    margin-top:0.833em;
+    font-size:2.4rem;
+    color:#ffffff;
+    font-weight:600;
+}
+
+.proactive-business>.main-news {
+	overflow:hidden;
+	position:relative;
+    padding:12em 0 54em;
+    background:#0042bf;
+}
+.main-news .news-con .main-tit .tit {
+    margin-bottom:1.304em;
+    color:#fff;
+}
+.main-news .news-con .maxinner {
+    display:flex;
+    position:relative;
+}
+.main-news .news-con .left {
+    width:40%;
+}
+.main-news .news-con .right {
+    width:60%;
+}
+.main-news .news-con .news-list {
+    border-top:2px solid #fff;
+}
+.main-news .news-con .news-list li {
+    border-bottom:2px solid #fff;
+}
+.main-news .news-con .news-list li a {
+    display:block;
+    padding:5em 3em;
+}
+.main-news .news-con .news-list li h3 {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    font-size:2.4rem;
+    color:#fff;
+    font-weight:600;
+    letter-spacing:-0.021em;
+}
+.main-news .news-con .news-list li p {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    margin:1em 0 0;
+    font-size:1.6rem;
+    color:#fff;
+    line-height:1.625em;
+    letter-spacing:-0.013em;
+}
+.main-news .news-con .news-list li span {
+	margin-top:0.5em;
+	display:inline-block;
+    font-size:1.5rem;
+    color:#fff;
+    font-weight:600;   
+    letter-spacing:-0.033em;
+}
+.main-news .news-con .news-list li .cursor-imgbox {
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:10;
+    width:40em;
+    height:33em;
+	overflow:hidden;
+}
+.main-news .news-con .news-list li .cursor-imgbox .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.main-news .news-con .news-list li .cursor-imgbox .img:after {
+	content:"";
+	position:absolute;
+	right:0;
+	top:0;
+	z-index:1;
+	width:100%;
+	height:100%;
+	background:#0042bf;
+	mix-blend-mode:screen;
+}
+.main-news .news-con .news-list li .cursor-imgbox .img > div {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	-webkit-filter: grayscale(100%);
+	filter:gray;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+}
+.main-news .news-con .news-list li .cursor-imgbox .img img {
+	-webkit-filter: grayscale(100%);
+	filter:gray;
+}
+
+/***************** 7. (Eugene Recruit) *****************/
+.main-recruit { /* 제일 큰 박스 */
+    position: relative;
+    z-index:1;
+    padding:3em 0 17em;
+    width: 100vw;
+    left: 0;
+}
+.main-recruit .maxinner {   /* recruit+열정+ 등등 */
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+.main-recruit .left h2 {    /* Eugene Recruit */
+    position:relative;
+    padding-left:0.714em;
+    font-size:7rem;
+    color:#0042bf;
+    line-height:1.286em;
+    font-weight:700;
+}
+.main-recruit .left p {     /* 열정 */
+    margin-top:0.667em;
+    padding-left:1.767em;
+    font-size:3rem;
+    color:#0042bf;
+    font-weight:600;
+}
+.main-recruit .right {  /* view more 전체박스*/
     color: #0042bf;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-right: 10%;
 }
 
-/* 8. 하단영역 */
+
+
+
+
+
+/* 
+
+8. 하단영역
 #footer-area {
     height: 250px;
     background-color: #000;
@@ -338,3 +645,4 @@ SNS Channel - 사진*/
     color: rgba(255, 255, 255, 0.5);
     font-size: 12px;
 }
+*/

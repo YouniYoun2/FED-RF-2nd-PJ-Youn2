@@ -27,7 +27,7 @@
   height: 100%;
   object-fit: cover;
 }
-/* 링크 설정 */
+/* 링크 설정(해야됨) */
 .link {
   position: absolute;
   bottom: 10%;

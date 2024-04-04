@@ -12,7 +12,7 @@
 /* 공사중 표시 */
 body * {
     margin: 0 auto;
-    outline: 1px dashed #81de0721;
+    outline: 1px dashed #91ff00;
 }
 
 /* 폰트 */
@@ -201,9 +201,10 @@ body, html, h1, h2, h3, h4, h5, h6, ul, dl, dt, dd, a {
 /************* 3. 하단영역 *************/
 #footer {
     position: relative;
-    z-index: 1;
-    background: #111111;
-    min-height: calc(100vh - -137rem);
+    z-index: -1;
+    background: #7658fc;
+    /* min-height: calc(100vh - -137rem); */
+    height: 200px;
     transform: translateY(100%);
 }
 /* ft-top 사이버감사실,법적고지, 패밀리사이트 */
@@ -276,7 +277,7 @@ body, html, h1, h2, h3, h4, h5, h6, ul, dl, dt, dd, a {
     line-height: 1.5;
 }
 #footer .ft-top .ft-site ul li a:hover {
-    color: #111;
+    color: #abcc17;
 }
 
 /* bt-btm 정보글, sns */
@@ -337,7 +338,7 @@ body, html, h1, h2, h3, h4, h5, h6, ul, dl, dt, dd, a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #292929;
+    background-color: #975555;
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-transition: background-color 0.3s;

@@ -1,42 +1,26 @@
-/* (개인필기) 인터발이란?
-일정한 시간 간격으로 지속적으로 반복해서 작업을 실행할 때 사용하는 js함수 */
-
-
-
-
-
-// DOM 선택함수
 const qs = (x) => document.querySelector(x);
 const qsa = (x) => document.querySelectorAll(x);
 
-// addEvent 함수
-// ele - 요소, evt - 이벤트, fn - 함수
 const addEvt = (ele, evt, fn) => ele.addEventListener(evt, fn);
 
-// HTML태그 로딩후 loadFn함수 호출! ///
 addEvt(window, "DOMContentLoaded", loadFn);
 
 /****************************************** 
-    함수명: loadFn
-    기능: 로딩 후 버튼 이벤트 및 기능구현
+    loadFn : 로딩 후 버튼 이벤트 및 기능구현
 ******************************************/
 function loadFn() {
     console.log("로딩완료!");
 
     // 이동버튼 대상:  .abtn
     const abtn = qsa(".abtn");
-    // 변경대상 : #slide
     const slide = qs("#slide");
-    // 블릿버튼 : .indic
     let indic = document.querySelector(".indic");
-    // console.log(abtn,slide);
 
 
 
     
-    // 3개의 슬라이드와 2개의 블릿 만들기
-    for (let i = 1; i < 4; i++) {
-        // 슬라이드 넣기
+    // 3개의 슬라이드와 블릿 만들기
+    for (let i = 0; i < 3; i++) {
         slide.innerHTML += `
         <li data-seq="${i}">
             <img 
@@ -44,21 +28,12 @@ function loadFn() {
             alt="slide">
         </li>    
         `;
-        // 블릿 넣기
-    /*     indic.innerHTML += `
-        <li ${i === 0 ? 'class="on"' : ""}>
-            <img src="images/bu-arrow-next.png" alt="">
-            <img src="images/bu-arrow-prev.png" alt="">
-        </li>
-        `; */
-    } ////// for ////////
+    }
 
     // li를 생성한 후 그 li다시 수집한다!
     // 블릿의 li까지 수집! indic 변수
     indic = document.querySelectorAll(".indic li");
 
-    // 슬라이드 순번 전역변수
-    let snum = 0;
 
     // 2. 모든 버튼에 이벤트 설정하기
     for (let x of abtn) {
@@ -90,7 +65,6 @@ function loadFn() {
         setTimeout(() => {
             prot = false; // 0.6초후 해제!
         }, 600);
-        /////////////////////////////////////
 
         let isRbtn = sts ? this.classList.contains("ab2") : true;
         // => sts값이 트루냐?
@@ -172,13 +146,8 @@ autoSlide();
 
 // [자동넘김호출함수].. 유진이는 3초걸림
 function autoSlide() {
-    // setInterval(함수, 시간)
-    // - 일정시간 간격으로 함수를 호출
-    // clearInterval(인터발변수)
-    // - 변수에 담긴 인터발을 지움(멈춤)
     autoI = setInterval(() => {
         // 값을 2개 보내야함
-
         // 첫번째 전달값은 이벤트객체가 들어가는 변수이므로 false 값을 쓰고
         // 두번째 전달값은 자동호출임을 알리는 변수이므로 false값을 전달한다.
         goSlide(false, false);

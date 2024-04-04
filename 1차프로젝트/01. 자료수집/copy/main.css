@@ -142,7 +142,15 @@ a {
     letter-spacing:-0.011em;
 }
 .fixee{z-index:99;} 
-.gall-youtube video{position: absolute;top: 50%;left: 50%;z-index: -1;height: 100%;min-width: 100%; transform:translate(-50%,-50%);}
+.gall-youtube video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    height: 100%;
+    min-width: 100%;
+    transform:translate(-50%,-50%);
+}
 
 
 
