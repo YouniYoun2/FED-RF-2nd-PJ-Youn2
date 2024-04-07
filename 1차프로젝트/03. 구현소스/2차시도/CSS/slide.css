@@ -14,54 +14,22 @@ ol {
     padding: 0px;
     list-style: none;
 }
+
+
 /**************************************/
-    /* ChatGPT 도움 */
-.imgSlides {
-    display: none;
-}
 
-.main-visual {
+
+
+#contents {
     position: relative;
-    overflow: hidden;
-}
-
-.vs-bg {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.vs-txt {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-    color: #fff;
-    text-align: center;
-}
-
-.active {
-    opacity: 1;
-}
-
-.slideIndex {
-    display: none;
-}
-
-#contents>header {
-    position: relative;
-    width: 100%;
+    width: 1200px;
+    margin: 0px auto;
 }
 
 #contents>section {
     position: relative;
+    width: 2002px;
+    height: 1650px;
     float: left;
     overflow: hidden;   /*넘치는 자식요소 숨기기*/
     box-sizing: border-box;
@@ -114,7 +82,6 @@ ol {
     bottom: 50px;
     left: 80px;
 }
-
 .indic li {
     width: 16px;
     height: 16px;
@@ -145,16 +112,3 @@ ol {
     float: left;
 }
 
-#contents>footer {
-    position: relative;
-    width: 100%;
-    height: 80px;
-    background-color: #ccc;
-    clear: both;
-    /*float해제*/
-    font-size: 9px;
-    color: #fff;
-    text-align: center;
-    box-sizing: border-box;
-    padding-top: 10px;
-}
